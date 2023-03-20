@@ -225,6 +225,25 @@ Projects
   height: 40px;
 }
 
+/* .canvasContainer {
+  margin: 10px 20px 25px 20px;
+} */
+
+.canvasImagePortrait {
+  margin: 10px 20px 25px 20px;
+  max-width: 300px;
+}
+
+.lineBreak {
+  flex-basis: 100%;
+  height: 0;
+}
+
+.canvasImageLandscape {
+  margin: 10px 20px 25px 20px;
+  max-width: 400px;
+}
+
 .projectsBorderContainer {
   /* max-width: 600px; */
   /* max-width: 100%; */

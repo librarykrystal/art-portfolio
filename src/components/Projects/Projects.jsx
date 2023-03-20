@@ -1,13 +1,15 @@
 import React, { useLayoutEffect } from "react";
 
-import rundownHome from './theRundown_home.png';
-import rundownDetails from './theRundown_details.png';
-import rundownEdit from './theRundown_edit.png';
-import movieSetList from './myMovieSet_list.png';
-import movieSetDetails from './myMovieSet_details2.png';
-import galleryAll from './gallerySnaps_all.png';
-import galleryDesc1 from './gallerySnaps_desc1.png';
-import galleryDesc2 from './gallerySnaps_desc2.png';
+import fitzgerald from './webFitzgeraldE.png';
+import hitchcock from './webHitchcockA.png';
+import nabokov from './webNabokovV.png';
+import poe from './webPoeEA.png';
+import price from './webPriceV.png';
+import serling from './webSerlingR.png';
+import simone from './webSimoneN.png';
+import welles from './webWellesO.png';
+import wilde from './webWildeO.png';
+import winehouse from './webWinehouseA.png';
 
 
 // Material UI Imports
@@ -76,90 +78,20 @@ function Projects() {
       <div className="projectsOuterContainer">
         <div className="projectsInnerContainer">
 
-        {/* THE RUNDOWN */}
-        <div className="projectsBorderContainer">
-            <div className="projectHeaderBox">
-              <Typography className="projectHeaderText" variant="h5" mt={0} mb={0} fontWeight="bold" gutterBottom>
-                The Rundown
-              </Typography>
-              <Typography className="projectHeaderText" variant="body1" mt={0} mb={0} gutterBottom>
-                Artist's Paint Inventory & Wishlist App
-              </Typography>
-            </div>
-            <div className="projectBody">
-              <div className="projectImages">
-                <img className="appImage" src={rundownHome}></img>
-                <img className="appImage" src={rundownDetails}></img>
-                <img className="appImage" src={rundownEdit}></img>
-              </div>
-              <div className="projectButtons">
-                <Button
-                variant="contained"
-                color="info"
-                size="small"
-                startIcon={<GitHubIcon />}
-                href="https://github.com/librarykrystal/artist-inventory"
-                >See it on GitHub
-              </Button>
-            </div>
-          </div>
-        </div>
+          <img className="canvasImagePortrait" src={winehouse}></img>
+          <img className="canvasImagePortrait" src={simone}></img>
+          <img className="canvasImagePortrait" src={welles}></img>
+          <div class="lineBreak"></div>
+          <img className="canvasImageLandscape" src={fitzgerald}></img>
+          <img className="canvasImageLandscape" src={serling}></img>
+          <div class="lineBreak"></div>
+          <img className="canvasImagePortrait" src={poe}></img>
+          <img className="canvasImagePortrait" src={wilde}></img>
+          <img className="canvasImagePortrait" src={nabokov}></img>
+          <div class="lineBreak"></div>
+          <img className="canvasImageLandscape" src={price}></img>
+          <img className="canvasImageLandscape" src={hitchcock}></img>
 
-        {/* MY MOVIE SET */}
-        <div className="projectsBorderContainer">
-          <div className="projectHeaderBox">
-            <Typography className="projectHeaderText" variant="h5" mt={0} mb={0} fontWeight="bold" gutterBottom>
-              My Movie Set
-            </Typography>
-            <Typography className="projectHeaderText" variant="body1" mt={0} mb={0} gutterBottom>
-              Film Cataloguing App
-            </Typography>
-          </div>
-          <div className="projectBody">
-            <div className="projectImages">
-              <img className="appImage" src={movieSetList}></img>
-              <img className="appImage" src={movieSetDetails}></img>
-            </div>
-            <div className="projectButtons">
-              <Button
-              variant="contained"
-              color="info"
-              size="small"
-              startIcon={<GitHubIcon />}
-              href="https://github.com/librarykrystal/weekend-movie-sagas"
-              >See it on GitHub
-              </Button>
-            </div>
-          </div>
-        </div>
-
-        {/* MY SNAPS GALLERY */}
-        <div className="projectsBorderContainer">
-          <div className="projectHeaderBox">
-            <Typography className="projectHeaderText" variant="h5" mt={0} mb={0} fontWeight="bold"  gutterBottom>
-              My Snaps Gallery
-            </Typography>
-            <Typography className="projectHeaderText" variant="body1" mt={0} mb={0} gutterBottom>
-              Gallery with Likes & Toggle Captions
-            </Typography>
-          </div>
-          <div className="projectBody">
-            <div className="projectImages">
-              <img className="appImage" src={galleryDesc2}></img>
-              <img className="appImage" src={galleryDesc1}></img>
-            </div>
-            <div className="projectButtons">
-              <Button
-              variant="contained"
-              color="info"
-              size="small"
-              startIcon={<GitHubIcon />}
-              href="https://github.com/librarykrystal/weekend-react-gallery"
-              >See it on GitHub
-              </Button>
-            </div>
-          </div>
-        </div>
         </div>
 
         <center>
