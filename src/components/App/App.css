@@ -1,0 +1,292 @@
+html,
+body,
+#react-root {
+  height: 100%;
+}
+
+body {
+  font-family: 'Albert Sans', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0px;
+  background-color: white;
+}
+
+/* -----------------------------------------------------------------
+Header
+----------------------------------------------------------------- */
+
+.headerOuter {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  grid-template-rows: 2;
+  top: 0;
+  height: 95px;
+}
+
+.headerName {
+  grid-row-start: 1;
+  justify-content: center;
+}
+
+h1 {
+  font-family: "Rock Salt";
+}
+
+.headerFSSD {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  grid-row-start: 2;
+  width: 100px;
+  position: absolute;
+  top: 110px;
+  height: 70px;
+  justify-self: center;
+  text-align: center;
+}
+
+/* -----------------------------------------------------------------
+Nav Bar
+----------------------------------------------------------------- */
+
+.navBarUpper {
+  background-color: black;
+  height: 25px;
+  margin-top: 15px;
+  color: white;
+  width: 100%;
+}
+
+.navBarContent {
+  background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(9,0,36,1) 5%, rgba(135,43,68,1) 50%, rgba(241,177,112,1) 100%);
+  height: 45px;
+  margin-top: 0px;
+  color: white;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 2;
+  grid-column-gap: 115px;
+}
+
+.navFSSD {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  grid-row-start: 2;
+  width: 100px;
+  position: absolute;
+  top: 110px;
+  left: 50%;
+  transform: translate(-50%);
+  height: 70px;
+  justify-self: center;
+  text-align: center;
+}
+
+.navLinksLeft {
+  grid-column-start: 1;
+  display: flex;
+  justify-content: center;
+  justify-self: flex-end;
+  width: 115px;
+}
+
+.navLinksRight {
+  grid-column-start: 2;
+  display: flex;
+  justify-content: flex-start;
+  justify-self: flex-start;
+  width: 115px;
+}
+
+/* -----------------------------------------------------------------
+Content Container
+----------------------------------------------------------------- */
+
+.container {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* -----------------------------------------------------------------
+Home — Skills / Values
+----------------------------------------------------------------- */
+
+.skillsValuesContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.skillsBorderContainer {
+  width: 220px;
+  background-color: black;
+  margin: 25px 20px 0px 20px;
+  justify-self: center;
+  display: grid;
+  grid-template-rows: 2;
+  border-bottom: 12px solid black;
+}
+
+.skillsHeaderBox {
+  grid-row-start: 1;
+  height: 30px;
+  color: white;
+  background-color: black;
+  text-align: center;
+}
+
+.skillsHeaderText {
+  margin-top: 10px;
+}
+
+.skillsBody {
+  grid-row-start: 2;
+  margin-top: 5px;
+  padding: 0px 15px 0px 15px;
+  /* background: linear-gradient(180deg, #f2f2f2 0%, white 20%, white 80%, #f2f2f2 100%); */
+  background-color: white;
+  text-align: center;
+}
+
+.valuesBorderContainer {
+  min-width: 150px;
+  max-width: 250px;
+  background-color: black;
+  margin: 25px 20px 0px 20px;
+  justify-self: center;
+  display: grid;
+  grid-template-rows: 2;
+  border-bottom: 12px solid black;
+}
+
+.styleBorderContainer {
+  width: 220px;
+  background-color: black;
+  margin: 25px 20px 0px 20px;
+  justify-self: center;
+  display: grid;
+  grid-template-rows: 2;
+  border-bottom: 12px solid black;
+}
+
+/* -----------------------------------------------------------------
+Projects
+----------------------------------------------------------------- */
+
+.projectsHeaderBox {
+  grid-row-start: 1;
+  display: flex;
+  justify-content: center;
+  height: 45px;
+  margin-top: 30px;
+  margin-bottom: 0px;
+  color: white;
+  background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(9,0,36,1) 5%, rgba(135,43,68,1) 70%, #b77862 100%);
+  text-align: center;
+}
+
+.projectsOuterContainer{
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.projectsInnerContainer{
+  background-color: black;
+  padding-bottom: 70px;
+  padding-top: 25px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.projectsHeaderText {
+  padding-top: 13px;
+  height: 40px;
+}
+
+.projectsBorderContainer {
+  /* max-width: 600px; */
+  /* max-width: 100%; */
+  margin: 10px 20px 25px 20px;
+  border-bottom: 12px solid black;
+}
+
+.projectHeaderBox {
+  grid-row-start: 1;
+  height: 60px;
+  color: black;
+  background-color: white;
+  text-align: center;
+  padding-top: 12px;
+}
+
+.projectBody {
+  grid-row-start: 2;
+  background-color: white;
+  /* background: linear-gradient(180deg, #e6e6e6 0%, white 30%, white 70%, #e6e6e6 100%); */
+  padding: 5px 10px 15px 10px;
+}
+
+.projectImages {
+  padding: 11px 0px 25px 0px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.appImage {
+  min-height: 150px;
+  max-height: 17vw;
+  border: 1px solid gray;
+  box-shadow: 1px 1px 2px;
+  margin: 0px 10px 0px 10px;
+}
+
+.projectButtons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 3px;
+}
+
+/* -----------------------------------------------------------------
+About
+----------------------------------------------------------------- */
+
+.photo {
+  border: 5px solid black;
+  max-width: 250px;
+  margin-top: 30px;
+}
+
+.intro {
+  max-width: 500px;
+  margin-top: 20px;
+  justify-items: center;
+}
+
+/* -----------------------------------------------------------------
+Generator
+----------------------------------------------------------------- */
+
+.generatorBox {
+  margin-top: 30px;
+  border-bottom: 12px solid black;
+  width: 270px;
+  height: 180px;
+  background: linear-gradient(180deg, #f2f2f2 40%, white 60%, white 80%, #f2f2f2 100%);
+}
+
+.generatorHeader {
+  background-color: black;
+  color: white;
+  padding-top: 4px;
+  padding-bottom: 1px;
+}
