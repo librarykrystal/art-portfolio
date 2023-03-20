@@ -18,6 +18,7 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import PortraitIcon from '@mui/icons-material/Portrait';
 import BrushIcon from '@mui/icons-material/Brush';
+import CodeIcon from '@mui/icons-material/Code';
 
 
 // Material UI Theming
@@ -61,9 +62,9 @@ function Nav() {
     <ThemeProvider theme={theme}>
 
       <div className="navFSSD">
-        <Typography variant="body1" mt={0.1} mb={0} ml={-0.5} sx={{width: "100px", borderLeft: "5px solid #6f2c3f", borderRight: "5px solid #8f454c"}} gutterBottom>Full-Stack</Typography>
-        <Typography variant="body1" mt={0} mb={-0.4} ml={-0.5} sx={{width: "100px", borderLeft: "5px solid black", borderRight: "5px solid black"}} gutterBottom>Software</Typography>
-        <Typography variant="body1" mt={0} mb={0} ml={-0.5} sx={{width: "100px", borderLeft: "5px solid black", borderRight: "5px solid black"}} gutterBottom>Developer</Typography>
+        <Typography variant="body1" mt={0.1} mb={0} ml={-0.5} sx={{width: "100px", borderLeft: "5px solid #184d58", borderRight: "5px solid #2f6b6a"}} gutterBottom>Acrylic</Typography>
+        <Typography variant="body1" mt={0} mb={-0.4} ml={-0.5} sx={{width: "100px", borderLeft: "5px solid black", borderRight: "5px solid black"}} gutterBottom>Portraiture</Typography>
+        <Typography variant="body1" mt={0} mb={0} ml={-0.5} sx={{width: "100px", borderLeft: "5px solid black", borderRight: "5px solid black"}} gutterBottom>Artist</Typography>
       </div>
 
       <div className="navBarUpper"></div>
@@ -107,12 +108,12 @@ function Nav() {
             <GitHubIcon sx={{ fontSize: 26 }} />
           </IconButton>
           {/* GALLERY OF FROST */}
-          <IconButton aria-label="galleryOfFrost"
+          <IconButton aria-label="KrystalFrost"
             className="navIconBtn"
             color="primary"
-            href="https://www.galleryoffrost.com/"
+            href="https://www.krystalfrost.com/"
           >
-            <BrushIcon sx={{ fontSize: 26 }} />
+            <CodeIcon sx={{ fontSize: 26 }} />
           </IconButton>
         </div>
 
