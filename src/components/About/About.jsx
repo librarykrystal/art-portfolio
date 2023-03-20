@@ -44,7 +44,7 @@ function About() {
         <img className="photo" src={selfPhoto}></img>
         <div className="intro">
           <Typography variant="body1" mt={0} mb={0} sx={{ textIndent: "40px", textAlign: "justify"}}gutterBottom>
-            I’m a creative type and a puzzle-solver, full-stack trained with an affinity for front-end design.  When I’m not working in code, I can be found painting, writing, sipping coffee with pals, or wandering my favorite museums.
+          I love pinpointing what is unique about each subject’s features, and the satisfaction in capturing them in paint.  People are drawn to eyes, but I find it is often the mouth that makes-or-breaks a likeness.  When I’m not painting, I can be found developing for the web, writing, sipping coffee with pals, or wandering my favorite museums.
           </Typography>
         </div>
       </div>
