@@ -116,10 +116,21 @@ Content Container
 Home — Skills / Values
 ----------------------------------------------------------------- */
 
-.skillsValuesContainer {
+.inProgHeaderText {
+  padding-top: 13px;
+  height: 40px;
+}
+
+.inProgContainer {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+}
+
+.inProgImage {
+  border: 5px solid black;
+  max-width: 180px;
+  margin: 10px 0px 10px 0px;
 }
 
 .skillsBorderContainer {
@@ -186,7 +197,8 @@ Projects
   margin-top: 30px;
   margin-bottom: 0px;
   color: white;
-  background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(9,0,36,1) 5%, rgba(135,43,68,1) 70%, #b77862 100%);
+  /* background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(9,0,36,1) 5%, rgba(135,43,68,1) 70%, #b77862 100%); */
+  background: linear-gradient(90deg, rgba(0,0,0,1) 0%, #000022 5%, #005a61 70%, #639b83 100%);
   text-align: center;
 }
 

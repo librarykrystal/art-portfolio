@@ -2,6 +2,12 @@ import React, { useLayoutEffect } from "react";
 
 import Projects from '../Projects/Projects';
 
+import princeInProg1 from './princeInProg1.png';
+import princeInProg2 from './princeInProg2.png';
+import princeInProg3 from './princeInProg3.png';
+import princeInProg4 from './princeInProg4.png';
+import princeInProg5 from './princeInProg5.png';
+
 // Material UI Imports
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import Typography from '@mui/material/Typography';
@@ -14,9 +20,10 @@ import '@fontsource/albert-sans/400.css';
 // Material UI Theming
 const theme = createTheme({
   typography: {
-    fontFamily: [
-      'Albert Sans',
-    ],
+    fontFamily: 'Albert Sans',
+    h4: {
+      fontFamily: 'Rock Salt',
+    }
   },
   palette: {
     primary: {
@@ -24,6 +31,10 @@ const theme = createTheme({
     },
     secondary: {
       main: '#fff',
+      contrastText: "#fff",
+    },
+    info: {
+      main: '#9c454d',
       contrastText: "#fff",
     },
   },
@@ -40,55 +51,19 @@ function Home() {
     <ThemeProvider theme={theme}>
       <div className="container">
 
-        <div className="skillsValuesContainer">
+      <div className="inProgHeader">
+          <Typography className="inProgHeaderText" variant="h4" fontWeight="bold" mb={0} sx={{fontSize: 18}} gutterBottom>
+            IN PROGRESS
+          </Typography>
+        </div>
 
-          {/* SKILLS */}
-          <div className="skillsBorderContainer">
-            <div className="skillsHeaderBox">
-              <Typography className="skillsHeaderText" variant="h6" mt={0.4} mb={0} sx={{ fontSize: 20 }} gutterBottom>
-                Skills
-              </Typography>
-            </div>
-            <div className="skillsBody">
-              <Typography variant="body1" mt={0.5} mb={0} gutterBottom>HTML • CSS • JavaScript</Typography>
-              <Typography variant="body1" mt={0} mb={0} gutterBottom>JQuery • React • Redux</Typography>
-              <Typography variant="body1" mt={0} mb={0} gutterBottom>Photoshop • Material UI</Typography>
-              <Typography variant="body1" mt={0} mb={0} gutterBottom>Node • npm • Express</Typography>
-              <Typography variant="body1" mt={0} mb={0.2} gutterBottom>Ajax • Axios • PostgreSQL</Typography>
-            </div>
-          </div>
+        <div className="inProgContainer">
 
-          {/* VALUES */}
-          <div className="valuesBorderContainer">
-              <div className="skillsHeaderBox">
-                <Typography className="skillsHeaderText" variant="h6" mt={0.4} mb={0} sx={{ fontSize: 20 }} gutterBottom>
-                  Values
-                </Typography>
-              </div>
-              <div className="skillsBody">
-                <Typography variant="body1" mt={0.5} mb={0} gutterBottom>Empathy</Typography>
-                <Typography variant="body1" mt={0} mb={0} gutterBottom>Integrity</Typography>
-                <Typography variant="body1" mt={0} mb={0} gutterBottom>Inclusivity</Typography>
-                <Typography variant="body1" mt={0} mb={0} gutterBottom>Patience</Typography>
-                <Typography variant="body1" mt={0} mb={0.2} gutterBottom>Accountability</Typography>
-              </div>
-          </div>
-
-          {/* STYLE */}
-          <div className="styleBorderContainer">
-            <div className="skillsHeaderBox">
-              <Typography className="skillsHeaderText" variant="h6" mt={0.4} mb={0} sx={{ fontSize: 20 }} gutterBottom>
-                Style
-              </Typography>
-            </div>
-            <div className="skillsBody">
-              <Typography variant="body1" mt={0.5} mb={0} gutterBottom>Remote Work</Typography>
-              <Typography variant="body1" mt={0} mb={0} gutterBottom>Open Communication</Typography>
-              <Typography variant="body1" mt={0} mb={0} gutterBottom>Flexible Hours</Typography>
-              <Typography variant="body1" mt={0} mb={0} gutterBottom>Supportive Teams</Typography>
-              <Typography variant="body1" mt={0} mb={0.2} gutterBottom>Room for Creativity</Typography>
-            </div>
-          </div>
+        <img className="inProgImage" src={princeInProg1}></img>
+        <img className="inProgImage" src={princeInProg2}></img>
+        {/* <img className="inProgImage" src={princeInProg3}></img> */}
+        {/* <img className="inProgImage" src={princeInProg4}></img> */}
+        <img className="inProgImage" src={princeInProg5}></img>
 
         </div>
       </div>

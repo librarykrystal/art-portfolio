@@ -19,6 +19,7 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import PortraitIcon from '@mui/icons-material/Portrait';
 import BrushIcon from '@mui/icons-material/Brush';
 import CodeIcon from '@mui/icons-material/Code';
+import InstagramIcon from '@mui/icons-material/Instagram';
 
 
 // Material UI Theming
@@ -100,12 +101,12 @@ function Nav() {
             <LinkedInIcon sx={{ fontSize: 26 }} />
           </IconButton>
           {/* GITHUB */}
-          <IconButton aria-label="gitHub"
+          <IconButton aria-label="instagram"
             className="navIconBtn"
             color="primary"
-            href="https://github.com/librarykrystal"
+            href="https://www.instagram.com/librarykrystal/"
           >
-            <GitHubIcon sx={{ fontSize: 26 }} />
+            <InstagramIcon sx={{ fontSize: 26 }} />
           </IconButton>
           {/* GALLERY OF FROST */}
           <IconButton aria-label="KrystalFrost"
