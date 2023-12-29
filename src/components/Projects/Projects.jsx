@@ -72,7 +72,7 @@ function Projects() {
 
       <div className="projectsHeaderBox">
         <Typography className="projectsHeaderText" variant="h4" fontWeight="bold" sx={{fontSize: 18}} gutterBottom>
-          WORKS
+          PREVIOUS WORKS
         </Typography>
       </div>
 
@@ -81,6 +81,7 @@ function Projects() {
 
           <img className="canvasImagePortrait" src={prince}></img>
           <img className="canvasImagePortrait" src={winehouse}></img>
+          <div class="lineBreak"></div>
           <img className="canvasImagePortrait" src={simone}></img>
           <img className="canvasImagePortrait" src={welles}></img>
           <div class="lineBreak"></div>
