@@ -8,6 +8,12 @@ import princeInProg3 from './princeInProg3.png';
 import princeInProg4 from './princeInProg4.png';
 import princeInProg5 from './princeInProg5.png';
 
+import hush from './webHush.png';
+import hushZoomCat from './webHushZoomCat.png';
+import hushZoomSkull from './webHushZoomSkullHand.png';
+import hushZoomTendrils from './webHushZoomTendrils.png';
+
+
 // Material UI Imports
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import Typography from '@mui/material/Typography';
@@ -53,7 +59,7 @@ function Home() {
 
       <div className="inProgHeader">
           <Typography className="inProgHeaderText" variant="h4" fontWeight="bold" mb={0} sx={{fontSize: 18}} gutterBottom>
-            IN PROGRESS
+            LATEST WORK
           </Typography>
         </div>
 
