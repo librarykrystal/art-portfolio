@@ -4,6 +4,7 @@ import fitzgerald from './webFitzgeraldE.png';
 import hitchcock from './webHitchcockA.png';
 import nabokov from './webNabokovV.png';
 import poe from './webPoeEA.png';
+import prince from './webPrince.png';
 import price from './webPriceV.png';
 import serling from './webSerlingR.png';
 import simone from './webSimoneN.png';
@@ -78,6 +79,7 @@ function Projects() {
       <div className="projectsOuterContainer">
         <div className="projectsInnerContainer">
 
+          <img className="canvasImagePortrait" src={prince}></img>
           <img className="canvasImagePortrait" src={winehouse}></img>
           <img className="canvasImagePortrait" src={simone}></img>
           <img className="canvasImagePortrait" src={welles}></img>
