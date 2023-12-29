@@ -4,6 +4,7 @@ import fitzgerald from './webFitzgeraldE.png';
 import hitchcock from './webHitchcockA.png';
 import nabokov from './webNabokovV.png';
 import poe from './webPoeEA.png';
+import prince from './webPrince.png';
 import price from './webPriceV.png';
 import serling from './webSerlingR.png';
 import simone from './webSimoneN.png';
@@ -71,14 +72,16 @@ function Projects() {
 
       <div className="projectsHeaderBox">
         <Typography className="projectsHeaderText" variant="h4" fontWeight="bold" sx={{fontSize: 18}} gutterBottom>
-          WORKS
+          PREVIOUS WORKS
         </Typography>
       </div>
 
       <div className="projectsOuterContainer">
         <div className="projectsInnerContainer">
 
+          <img className="canvasImagePortrait" src={prince}></img>
           <img className="canvasImagePortrait" src={winehouse}></img>
+          <div class="lineBreak"></div>
           <img className="canvasImagePortrait" src={simone}></img>
           <img className="canvasImagePortrait" src={welles}></img>
           <div class="lineBreak"></div>
