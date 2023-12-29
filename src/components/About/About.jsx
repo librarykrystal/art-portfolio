@@ -44,7 +44,7 @@ function About() {
         <img className="photo" src={selfPhoto}></img>
         <div className="intro">
           <Typography variant="body1" mt={0} mb={0} sx={{ textIndent: "40px", textAlign: "justify"}}gutterBottom>
-          I love pinpointing what is unique about each subject’s features, and the satisfaction in capturing them in paint.  People are drawn to eyes, but I find it is often the mouth that makes-or-breaks a likeness.  When I’m not painting, I can be found developing for the web, writing, sipping coffee with pals, or wandering my favorite museums.
+          My art constants, each magnetic, are people and paint.  In earlier portraits I captured facial likeness, while more recent work—bolstered by the addition of slow-drying paints and additives to my acrylic palette—ventures away from such classical depiction and into more vulnerable and dreamlike exploration of mood, inspiration, and mental health.  When I’m not painting, I can be found developing for the web, writing, sipping coffee with pals, or wandering my favorite museums.
           </Typography>
         </div>
       </div>
