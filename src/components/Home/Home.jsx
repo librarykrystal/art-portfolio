@@ -64,12 +64,12 @@ function Home() {
         </div>
 
         <div className="inProgContainer">
+        <img className="canvasImageLandscape" src={hush}></img>
+        <div class="lineBreak"></div>
 
-        <img className="inProgImage" src={princeInProg1}></img>
-        <img className="inProgImage" src={princeInProg2}></img>
-        {/* <img className="inProgImage" src={princeInProg3}></img> */}
-        {/* <img className="inProgImage" src={princeInProg4}></img> */}
-        <img className="inProgImage" src={princeInProg5}></img>
+        <img className="inProgImage" src={hushZoomTendrils}></img>
+        <img className="inProgImage" src={hushZoomSkull}></img>
+        <img className="inProgImage" src={hushZoomCat}></img>
 
         </div>
       </div>
