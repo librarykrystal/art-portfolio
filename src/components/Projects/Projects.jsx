@@ -72,7 +72,7 @@ function Projects() {
 
       <div className="projectsHeaderBox">
         <Typography className="projectsHeaderText" variant="h4" fontWeight="bold" sx={{fontSize: 18}} gutterBottom>
-          PREVIOUS WORKS
+          PORTRAITURE
         </Typography>
       </div>
 
