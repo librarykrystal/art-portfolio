@@ -68,7 +68,7 @@ Nav Bar
 
 .navBarContent {
   /* background: linear-gradient(90deg, rgba(0,0,0,1) 0%, #000022 15%, #005a61 55%, #a6e6a2 100%); */
-  background: linear-gradient(90deg, rgba(0,0,0,1) 0%, #fff 100%);
+  background: linear-gradient(90deg, rgba(0,0,0,1) 5%, #F8F8F8 90%);
   height: 40px;
   margin-top: 0px;
   margin-bottom: 25px;
@@ -141,12 +141,13 @@ Home — Latest Work / In Progress
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  padding-bottom: 30px;
 }
 
 .inProgImage {
   border: 4px solid black;
   max-width: 200px;
-  margin: 25px 5px 30px 5px;
+  margin: 25px 5px 5px 5px;
 }
 
 .caption {
@@ -233,7 +234,7 @@ Projects
 .projectsInnerContainer{
   background-color: black;
   padding-bottom: 70px;
-  padding-top: 45px;
+  padding-top: 50px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
