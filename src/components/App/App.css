@@ -21,19 +21,27 @@ Header
   flex-direction: column;
   grid-template-rows: 2;
   top: 0;
-  height: 95px;
+  height: 110px;
 }
 
 .headerName {
   grid-row-start: 1;
   justify-content: center;
+  text-align: center;
 }
 
 h1 {
   font-family: "Rock Salt";
 }
 
-.headerFSSD {
+.subheader {
+  grid-row-start: 2;
+  justify-content: center;
+  text-align: center;
+  height: 30px;
+}
+
+/* .headerFSSD {
   display: flex;
   flex-direction: column;
   color: white;
@@ -44,32 +52,34 @@ h1 {
   height: 70px;
   justify-self: center;
   text-align: center;
-}
+} */
 
 /* -----------------------------------------------------------------
 Nav Bar
 ----------------------------------------------------------------- */
 
-.navBarUpper {
+/* .navBarUpper {
   background-color: black;
   height: 25px;
   margin-top: 15px;
   color: white;
   width: 100%;
-}
+} */
 
 .navBarContent {
-  background: linear-gradient(90deg, rgba(0,0,0,1) 0%, #000022 5%, #005a61 50%, #a6e6a2 100%);
-  height: 45px;
+  /* background: linear-gradient(90deg, rgba(0,0,0,1) 0%, #000022 15%, #005a61 55%, #a6e6a2 100%); */
+  background: linear-gradient(90deg, rgba(0,0,0,1) 0%, #fff 100%);
+  height: 40px;
   margin-top: 0px;
+  margin-bottom: 25px;
   color: white;
   width: 100%;
   display: grid;
   grid-template-columns: 2;
-  grid-column-gap: 115px;
+  /* grid-column-gap: 115px; */
 }
 
-.navFSSD {
+/* .navFSSD {
   display: flex;
   flex-direction: column;
   color: white;
@@ -82,22 +92,24 @@ Nav Bar
   height: 70px;
   justify-self: center;
   text-align: center;
-}
+} */
 
 .navLinksLeft {
   grid-column-start: 1;
   display: flex;
-  justify-content: center;
-  justify-self: flex-end;
+  justify-content: flex-start;
+  justify-self: flex-start;
   width: 115px;
+  margin: 0px 0px 0px 10px;
 }
 
 .navLinksRight {
   grid-column-start: 2;
   display: flex;
   justify-content: flex-start;
-  justify-self: flex-start;
+  justify-self: flex-end;
   width: 115px;
+  margin: 0px 20px 0px 0px;
 }
 
 /* -----------------------------------------------------------------
@@ -118,12 +130,11 @@ Home — Latest Work / In Progress
 
 .latestImageLandscape {
   margin: 10px 20px 0px 20px;
-  max-width: 500px;
+  max-width: 100%;
 }
 
-.inProgHeaderText {
-  padding-top: 13px;
-  height: 40px;
+.inProgHeader {
+  height: 30px;
 }
 
 .inProgContainer {
@@ -135,7 +146,11 @@ Home — Latest Work / In Progress
 .inProgImage {
   border: 4px solid black;
   max-width: 200px;
-  margin: 10px 5px 10px 5px;
+  margin: 25px 5px 30px 5px;
+}
+
+.caption {
+  margin: 0px 0px 0px 0px;
 }
 
 .skillsBorderContainer {
@@ -203,7 +218,8 @@ Projects
   margin-bottom: 0px;
   color: white;
   /* background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(9,0,36,1) 5%, rgba(135,43,68,1) 70%, #b77862 100%); */
-  background: linear-gradient(90deg, rgba(0,0,0,1) 0%, #000022 5%, #005a61 70%, #639b83 100%);
+  /* background: linear-gradient(90deg, rgba(0,0,0,1) 0%, #000022 5%, #005a61 70%, #639b83 100%); */
+  background: linear-gradient(90deg, rgba(0,0,0,1) 20%, gray 70%, #fff 100%);
   text-align: center;
 }
 
@@ -217,7 +233,7 @@ Projects
 .projectsInnerContainer{
   background-color: black;
   padding-bottom: 70px;
-  padding-top: 25px;
+  padding-top: 45px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -236,6 +252,7 @@ Projects
 
 .canvasImagePortrait {
   margin: 10px 20px 25px 20px;
+  width: 100%;
   max-width: 300px;
 }
 

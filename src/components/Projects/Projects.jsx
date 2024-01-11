@@ -70,11 +70,11 @@ function Projects() {
         </Typography>
       </div> */}
 
-      <div className="projectsHeaderBox">
+      {/* <div className="projectsHeaderBox">
         <Typography component={'span'} className="projectsHeaderText" variant="h4" fontWeight="bold" sx={{fontSize: 18}} gutterBottom>
-          PORTRAITURE
+          WORKS
         </Typography>
-      </div>
+      </div> */}
 
       <div className="projectsOuterContainer">
         <div className="projectsInnerContainer">

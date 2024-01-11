@@ -18,9 +18,9 @@ const theme = createTheme({
     fontFamily: 'Albert Sans',
     h3: {
       fontFamily: 'Rock Salt',
-      fontSize: '1.2rem',
-      '@media (max-width:600px)': {
-        fontSize: '1.7rem',
+      fontSize: '3rem',
+      '@media (max-width:500px)': {
+        fontSize: '2rem',
       }
   }},
   palette: {
@@ -46,10 +46,16 @@ function Header() {
       <div className="headerOuter">
 
         <div className="headerName">
-          <Typography variant="h3" mt={1.4} mb={0} sx={{fontSize: "3rem"}} gutterBottom>
+          <Typography variant="h3" mt={1.4} mb={0}  gutterBottom>
             Krystal Frost
           </Typography>
           {/* <h1>Krystal Frost</h1> */}
+        </div>
+
+        <div className="subheader">
+          <Typography variant="body1" mt={0} mb={0} sx={{fontSize: "14pt"}} gutterBottom>
+            FINE ART
+          </Typography>
         </div>
 
         {/* <div className="headerFSSD">

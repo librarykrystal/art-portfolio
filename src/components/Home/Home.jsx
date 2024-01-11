@@ -29,9 +29,9 @@ import Box from '@mui/material/Box';
 const theme = createTheme({
   typography: {
     fontFamily: 'Albert Sans',
-    h4: {
-      fontFamily: 'Rock Salt',
-    }
+    // h3: {
+    //   fontFamily: 'Andika',
+    // }
   },
   palette: {
     primary: {
@@ -60,14 +60,14 @@ function Home() {
       <div className="container">
 
         <div className="inProgHeader">
-          <Typography component={'span'} className="inProgHeaderText" variant="h4" fontWeight="bold" mb={0} sx={{fontSize: 18}} gutterBottom>
-            LATEST WORK
+          <Typography component={'span'} className="inProgHeaderText" variant="h3" fontWeight="bold" mb={0} sx={{fontSize: 24}} gutterBottom>
+            LATEST CANVAS
           </Typography>
         </div>
 
         <img className="latestImageLandscape" src={hush}></img>
-        <div className="intro">
-          <Typography component={'span'} variant="body1" mt={-2} mb={3} sx={{ textAlign: "justify"}}gutterBottom>
+        <div className="caption">
+          <Typography component={'span'} variant="body1" sx={{ textAlign: "justify"}}gutterBottom>
           <Box fontWeight="bold" fontStyle="italic" display='inline'>Hush, </Box>16x20 acrylic on canvas
           </Typography>
         </div>
