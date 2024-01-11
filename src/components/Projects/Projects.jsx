@@ -71,7 +71,7 @@ function Projects() {
       </div> */}
 
       <div className="projectsHeaderBox">
-        <Typography className="projectsHeaderText" variant="h4" fontWeight="bold" sx={{fontSize: 18}} gutterBottom>
+        <Typography component={'span'} className="projectsHeaderText" variant="h4" fontWeight="bold" sx={{fontSize: 18}} gutterBottom>
           PORTRAITURE
         </Typography>
       </div>
@@ -98,7 +98,7 @@ function Projects() {
         </div>
 
         <center>
-          <Typography variant="body1" color="white" gutterBottom>© Krystal Frost</Typography>
+          <Typography component={'span'} variant="body1" color="white" gutterBottom>© Krystal Frost</Typography>
         </center>
         <br/>
 

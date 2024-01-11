@@ -19,7 +19,7 @@ function App() {
     <Router>
       <div>
         <Header />
-        <Nav2 />
+        <Nav />
         <Switch>
           <Redirect exact from="/" to="/home" />
 

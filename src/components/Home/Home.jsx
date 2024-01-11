@@ -60,14 +60,14 @@ function Home() {
       <div className="container">
 
         <div className="inProgHeader">
-          <Typography className="inProgHeaderText" variant="h4" fontWeight="bold" mb={0} sx={{fontSize: 18}} gutterBottom>
+          <Typography component={'span'} className="inProgHeaderText" variant="h4" fontWeight="bold" mb={0} sx={{fontSize: 18}} gutterBottom>
             LATEST WORK
           </Typography>
         </div>
 
         <img className="latestImageLandscape" src={hush}></img>
         <div className="intro">
-          <Typography variant="body1" mt={-2} mb={3} sx={{ textAlign: "justify"}}gutterBottom>
+          <Typography component={'span'} variant="body1" mt={-2} mb={3} sx={{ textAlign: "justify"}}gutterBottom>
           <Box fontWeight="bold" fontStyle="italic" display='inline'>Hush, </Box>16x20 acrylic on canvas
           </Typography>
         </div>
