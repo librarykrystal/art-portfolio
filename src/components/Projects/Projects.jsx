@@ -81,17 +81,17 @@ function Projects() {
 
           <img className="canvasImagePortrait" src={prince}></img>
           <img className="canvasImagePortrait" src={winehouse}></img>
-          <div class="lineBreak"></div>
+          <div className="lineBreak"></div>
           <img className="canvasImagePortrait" src={simone}></img>
           <img className="canvasImagePortrait" src={welles}></img>
-          <div class="lineBreak"></div>
+          <div className="lineBreak"></div>
           <img className="canvasImageLandscape" src={fitzgerald}></img>
           <img className="canvasImageLandscape" src={serling}></img>
-          <div class="lineBreak"></div>
+          <div className="lineBreak"></div>
           <img className="canvasImagePortrait" src={poe}></img>
           <img className="canvasImagePortrait" src={wilde}></img>
           <img className="canvasImagePortrait" src={nabokov}></img>
-          <div class="lineBreak"></div>
+          <div className="lineBreak"></div>
           <img className="canvasImageLandscape" src={price}></img>
           <img className="canvasImageLandscape" src={hitchcock}></img>
 
