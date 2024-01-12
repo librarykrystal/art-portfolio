@@ -76,7 +76,7 @@ function Nav() {
           {/* HOME */}
           <IconButton aria-label="home"
             className="navIconBtn"
-            color="secondary"
+            color="primary"
             onClick={goHome}
           >
             <HomeIcon sx={{ fontSize: 26 }} />
@@ -84,12 +84,18 @@ function Nav() {
           {/* ABOUT */}
           <IconButton aria-label="about"
             className="navIconBtn"
-            color="secondary"
+            color="primary"
             onClick={goAbout}
           >
             <InfoIcon sx={{ fontSize: 26 }} />
           </IconButton>
         </div>
+
+        {/* <div className="navMid">
+          <Typography component={'span'} color="primary" mb={0} sx={{fontSize: 24}}>
+            /
+          </Typography>
+        </div> */}
         
         <div className="navLinksRight">
           {/* LINKEDIN */}
