@@ -4,6 +4,7 @@ import React, { useLayoutEffect } from "react";
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import grey from '@mui/material/colors/grey';
 import Typography from '@mui/material/Typography';
+import Box from '@mui/material/Box';
 import '@fontsource/cabin/400.css';
 import '@fontsource/cabin/700.css';
 import '@fontsource/andika/400.css';
@@ -38,9 +39,15 @@ function Bulletin() {
 
   return (
     <ThemeProvider theme={theme}>
-      <Typography component={'span'}>
-            BULLETIN TEST
-          </Typography>
+      <div className="bulletinBox">
+        <Typography component={'span'} gutterBottom>
+          GALLERY EXHIBITION ANNOUNCEMENT
+        </Typography>
+        <Typography component={'span'} mt={1} sx={{ textIndent: "40px", textAlign: "justify"}}>
+          It is my pleasure to inform that the below original work, <Box fontWeight="bold" fontStyle="italic" display='inline'>Hush</Box>, will be on display in <Box fontWeight="bold" fontStyle="italic" display='inline'>Where Ideas Come From</Box>, an exhibition celebrating the centenary of Surrealism.  The show will be hosted in Gallery 427 of the Northrup King Building in the Northeast Minneapolis Arts District, and opens Saturday, January 20.
+        </Typography>
+      </div>
+     
       
 
     </ThemeProvider>

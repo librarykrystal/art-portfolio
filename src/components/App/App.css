@@ -125,11 +125,27 @@ Content Container
 ----------------------------------------------------------------- */
 
 .container {
-  padding: 20px;
+  padding: 0px 20px 20px 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+/* -----------------------------------------------------------------
+Bulletin — Optional News / Alerts at Top of /home
+----------------------------------------------------------------- */
+
+.bulletinBox {
+  border: 3px solid black;
+  padding: 5px 10px 5px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 600px;
+  min-width: 270px;
+  background-color: #F8F8F8;
 }
 
 /* -----------------------------------------------------------------
@@ -143,6 +159,7 @@ Home — Latest Work / In Progress
 
 .inProgHeader {
   height: 30px;
+  margin-top: 25px;
 }
 
 .inProgContainer {

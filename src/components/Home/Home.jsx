@@ -72,7 +72,7 @@ function Home() {
         <img className="latestImageLandscape" src={hush}></img>
         <div className="caption">
           <Typography component={'span'} variant="body1" sx={{ textAlign: "justify"}}gutterBottom>
-          <Box fontWeight="bold" fontStyle="italic" display='inline'>Hush, </Box>16x20 acrylic on canvas
+          <Box fontWeight="bold" fontStyle="italic" display='inline'>Hush</Box>, 16x20 acrylic on canvas
           </Typography>
         </div>
 
