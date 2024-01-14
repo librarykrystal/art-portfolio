@@ -63,7 +63,7 @@ function Home() {
         {/* Consuming Bulletin Component when desired, commenting out when not */}
         <Bulletin />
 
-        <div className="inProgHeader">
+        <div className="latestHeader">
           <Typography component={'span'} className="inProgHeaderText" variant="h3" fontWeight="bold" mb={0} sx={{fontSize: 24}} gutterBottom>
             LATEST CANVAS
           </Typography>
@@ -76,14 +76,14 @@ function Home() {
           </Typography>
         </div>
 
-        <div className="inProgContainer">
+        <div className="latestContainer">
         
         
         {/* <div class="lineBreak"></div> */}
 
-        <img className="inProgImage" src={hushZoomTendrils}></img>
-        <img className="inProgImage" src={hushZoomSkull}></img>
-        <img className="inProgImage" src={hushZoomCat}></img>
+        <img className="zoomImage" src={hushZoomTendrils}></img>
+        <img className="zoomImage" src={hushZoomSkull}></img>
+        <img className="zoomImage" src={hushZoomCat}></img>
 
         </div>
       </div>

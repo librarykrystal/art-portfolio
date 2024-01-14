@@ -41,30 +41,10 @@ h1 {
   height: 20px;
 }
 
-/* .headerFSSD {
-  display: flex;
-  flex-direction: column;
-  color: white;
-  grid-row-start: 2;
-  width: 100px;
-  position: absolute;
-  top: 110px;
-  height: 70px;
-  justify-self: center;
-  text-align: center;
-} */
 
 /* -----------------------------------------------------------------
 Nav Bar
 ----------------------------------------------------------------- */
-
-/* .navBarUpper {
-  background-color: black;
-  height: 25px;
-  margin-top: 15px;
-  color: white;
-  width: 100%;
-} */
 
 .navBarContent {
   /* background: linear-gradient(90deg, rgba(0,0,0,1) 0%, #000022 15%, #005a61 55%, #a6e6a2 100%); */
@@ -80,21 +60,6 @@ Nav Bar
   /* grid-column-gap: 115px; */
 }
 
-/* .navFSSD {
-  display: flex;
-  flex-direction: column;
-  color: white;
-  grid-row-start: 2;
-  width: 100px;
-  position: absolute;
-  top: 110px;
-  left: 50%;
-  transform: translate(-50%);
-  height: 70px;
-  justify-self: center;
-  text-align: center;
-} */
-
 .navLinksLeft {
   grid-column-start: 1;
   display: flex;
@@ -104,12 +69,12 @@ Nav Bar
   margin: 0px 0px 0px 10px;
 }
 
-.navMid {
+/* .navMid {
   grid-column-start: 2;
   display: flex;
   justify-content: center;
   justify-self: center;
-}
+} */
 
 .navLinksRight {
   grid-column-start: 3;
@@ -157,19 +122,19 @@ Home — Latest Work / In Progress
   max-width: 100%;
 }
 
-.inProgHeader {
+.latestHeader {
   height: 30px;
   margin-top: 25px;
 }
 
-.inProgContainer {
+.latestContainer {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   padding-bottom: 30px;
 }
 
-.inProgImage {
+.zoomImage {
   border: 4px solid black;
   max-width: 200px;
   margin: 25px 5px 5px 5px;
@@ -179,57 +144,6 @@ Home — Latest Work / In Progress
   margin: 0px 0px 0px 0px;
 }
 
-.skillsBorderContainer {
-  width: 220px;
-  background-color: black;
-  margin: 25px 20px 0px 20px;
-  justify-self: center;
-  display: grid;
-  grid-template-rows: 2;
-  border-bottom: 12px solid black;
-}
-
-.skillsHeaderBox {
-  grid-row-start: 1;
-  height: 30px;
-  color: white;
-  background-color: black;
-  text-align: center;
-}
-
-.skillsHeaderText {
-  margin-top: 10px;
-}
-
-.skillsBody {
-  grid-row-start: 2;
-  margin-top: 5px;
-  padding: 0px 15px 0px 15px;
-  /* background: linear-gradient(180deg, #f2f2f2 0%, white 20%, white 80%, #f2f2f2 100%); */
-  background-color: white;
-  text-align: center;
-}
-
-.valuesBorderContainer {
-  min-width: 150px;
-  max-width: 250px;
-  background-color: black;
-  margin: 25px 20px 0px 20px;
-  justify-self: center;
-  display: grid;
-  grid-template-rows: 2;
-  border-bottom: 12px solid black;
-}
-
-.styleBorderContainer {
-  width: 220px;
-  background-color: black;
-  margin: 25px 20px 0px 20px;
-  justify-self: center;
-  display: grid;
-  grid-template-rows: 2;
-  border-bottom: 12px solid black;
-}
 
 /* -----------------------------------------------------------------
 Projects
@@ -271,10 +185,6 @@ Projects
   padding-top: 13px;
   height: 40px;
 }
-
-/* .canvasContainer {
-  margin: 10px 20px 25px 20px;
-} */
 
 .canvasImagePortrait {
   margin: 10px 20px 25px 20px;
