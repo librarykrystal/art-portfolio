@@ -1,5 +1,6 @@
 import React, { useLayoutEffect } from "react";
 
+import Bulletin from '../Bulletin/Bulletin';
 import Projects from '../Projects/Projects';
 
 import princeInProg1 from './princeInProg1.png';
@@ -58,6 +59,9 @@ function Home() {
   return (
     <ThemeProvider theme={theme}>
       <div className="container">
+
+        {/* Consuming Bulletin Component when desired, commenting out when not */}
+        <Bulletin />
 
         <div className="inProgHeader">
           <Typography component={'span'} className="inProgHeaderText" variant="h3" fontWeight="bold" mb={0} sx={{fontSize: 24}} gutterBottom>
