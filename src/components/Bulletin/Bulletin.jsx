@@ -40,7 +40,7 @@ function Bulletin() {
   return (
     <ThemeProvider theme={theme}>
       <div className="bulletinBox">
-        <Typography component={'span'} gutterBottom>
+        <Typography component={'span'} sx={{ textAlign: "center"}} gutterBottom>
           GALLERY EXHIBITION ANNOUNCEMENT
         </Typography>
         <Typography component={'span'} mt={1} sx={{ textIndent: "40px", textAlign: "justify"}}>
