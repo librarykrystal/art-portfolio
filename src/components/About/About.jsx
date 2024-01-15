@@ -49,7 +49,7 @@ function About() {
         </div>
       </div>
 
-      <Generator />
+      {/* <Generator /> */}
 
       <center>
       <Typography variant="body1" mt={15} gutterBottom>© Krystal Frost</Typography>
