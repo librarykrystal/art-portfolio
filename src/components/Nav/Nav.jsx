@@ -99,14 +99,15 @@ function Nav() {
         
         <div className="navLinksRight">
           {/* LINKEDIN */}
-          <IconButton aria-label="linkedIn"
+          {/* <IconButton aria-label="linkedIn"
             className="navIconBtn"
             color="primary"
             href="https://www.linkedin.com/in/krystal-frost"
           >
             <LinkedInIcon sx={{ fontSize: 26 }} />
-          </IconButton>
-          {/* GITHUB */}
+          </IconButton> */}
+
+          {/* INSTAGRAM */}
           <IconButton aria-label="instagram"
             className="navIconBtn"
             color="primary"
@@ -114,14 +115,14 @@ function Nav() {
           >
             <InstagramIcon sx={{ fontSize: 26 }} />
           </IconButton>
-          {/* GALLERY OF FROST */}
-          <IconButton aria-label="KrystalFrost"
+
+          {/* <IconButton aria-label="KrystalFrost"
             className="navIconBtn"
             color="primary"
             href="https://www.krystalfrost.com/"
           >
             <CodeIcon sx={{ fontSize: 26 }} />
-          </IconButton>
+          </IconButton> */}
         </div>
 
       </div>
