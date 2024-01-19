@@ -11,16 +11,17 @@ import '@fontsource/andika/700.css';
 import '@fontsource/albert-sans/400.css';
 import '@fontsource/special-elite/400.css';
 import '@fontsource/rock-salt/400.css';
+import '@fontsource/kolker-brush';
 
 // Material UI Theming
 const theme = createTheme({
   typography: {
     fontFamily: 'Albert Sans',
     h3: {
-      fontFamily: 'Rock Salt',
-      fontSize: '3rem',
+      fontFamily: 'Kolker Brush',
+      fontSize: '6rem',
       '@media (max-width:500px)': {
-        fontSize: '2rem',
+        fontSize: '5rem',
       }
   }},
   palette: {
@@ -53,7 +54,7 @@ function Header() {
         </div>
 
         <div className="subheader">
-          <Typography variant="body1" mt={0} mb={0} sx={{fontSize: "14pt"}} gutterBottom>
+          <Typography variant="body1" mt={-3} mb={0} sx={{fontSize: "14pt"}} gutterBottom>
             FINE ART
           </Typography>
         </div>
