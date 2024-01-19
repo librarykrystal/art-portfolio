@@ -18,6 +18,7 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import PortraitIcon from '@mui/icons-material/Portrait';
 import BrushIcon from '@mui/icons-material/Brush';
+import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import CodeIcon from '@mui/icons-material/Code';
 import InstagramIcon from '@mui/icons-material/Instagram';
 
@@ -116,13 +117,14 @@ function Nav() {
             <InstagramIcon sx={{ fontSize: 26 }} />
           </IconButton>
 
-          {/* <IconButton aria-label="KrystalFrost"
+          {/* ETSY */}
+          <IconButton aria-label="etsy shop"
             className="navIconBtn"
             color="primary"
-            href="https://www.krystalfrost.com/"
+            href="https://www.etsy.com/shop/GalleryOfFrost"
           >
-            <CodeIcon sx={{ fontSize: 26 }} />
-          </IconButton> */}
+            <ShoppingCartIcon sx={{ fontSize: 26 }} />
+          </IconButton>
         </div>
 
       </div>
