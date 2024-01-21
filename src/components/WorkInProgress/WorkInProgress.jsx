@@ -1,24 +1,15 @@
 import React, { useLayoutEffect } from "react";
 
-import Bulletin from '../Bulletin/Bulletin';
-import Projects from '../Projects/Projects';
-
-import hush from './webHush.png';
-import hushZoomCat from './webHushZoomCat.png';
-import hushZoomSkull from './webHushZoomSkullHand.png';
-import hushZoomTendrils from './webHushZoomTendrils.png';
-
+import hush from '../Home/webHush.png';
+import hushZoomCat from '../Home/webHushZoomCat.png';
+import hushZoomSkull from '../Home/webHushZoomSkullHand.png';
+import hushZoomTendrils from '../Home/webHushZoomTendrils.png';
 
 // Material UI Imports
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import Typography from '@mui/material/Typography';
-import '@fontsource/cabin/400.css';
-import '@fontsource/cabin/700.css';
-import '@fontsource/andika/400.css';
-import '@fontsource/andika/700.css';
 import '@fontsource/albert-sans/400.css';
 import Box from '@mui/material/Box';
-
 
 // Material UI Theming
 const theme = createTheme({
@@ -43,7 +34,7 @@ const theme = createTheme({
   },
 });
 
-function Home() {
+function WorkInProgress() {
 
   // Makes each view load scrolled to top
   useLayoutEffect(() => {
@@ -59,26 +50,18 @@ function Home() {
 
         <div className="latestHeader">
           <Typography component={'span'} className="inProgHeaderText" variant="h3" fontWeight="bold" mb={0} sx={{fontSize: 24}} gutterBottom>
-            LATEST CANVAS
+            WORK IN PROGRESS
           </Typography>
         </div>
 
         <img className="latestImageLandscape" src={hush}></img>
         <div className="caption">
           <Typography component={'span'} variant="body1" sx={{ textAlign: "justify"}}gutterBottom>
-          <Box fontWeight="bold" fontStyle="italic" display='inline'>Hush</Box>, 16x20 acrylic on canvas
-          </Typography>
-        </div>
-
-        <div className="caption">
-          <Typography component={'span'} variant="body1" sx={{ textAlign: "justify"}}gutterBottom>
-          Featured in 2024 Surrealist gallery exhibition <Box fontStyle="italic" display='inline'>Where Ideas Come From</Box>
+          details about current work
           </Typography>
         </div>
 
         <div className="latestContainer">
-        
-        
         {/* <div class="lineBreak"></div> */}
 
         <img className="zoomImage" src={hushZoomTendrils}></img>
@@ -88,11 +71,8 @@ function Home() {
         </div>
       </div>
 
-      {/* Consuming Projects Component */}
-      <Projects />
-
     </ThemeProvider>
   );
 }
 
-export default Home;
+export default WorkInProgress;

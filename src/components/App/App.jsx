@@ -10,6 +10,7 @@ import Header from '../Header/Header';
 import Nav from '../Nav/Nav';
 import Home from '../Home/Home';
 import About from '../About/About';
+import WorkInProgress from '../WorkInProgress/WorkInProgress';
 
 
 function App() {
@@ -28,6 +29,10 @@ function App() {
 
           <Route exact path="/about">
             <About />
+          </Route>
+
+          <Route exact path="/wip">
+            <WorkInProgress />
           </Route>
 
         </Switch>

@@ -21,6 +21,7 @@ import BrushIcon from '@mui/icons-material/Brush';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import CodeIcon from '@mui/icons-material/Code';
 import InstagramIcon from '@mui/icons-material/Instagram';
+import PendingIcon from '@mui/icons-material/Pending';
 
 
 // Material UI Theming
@@ -60,6 +61,11 @@ function Nav() {
     history.push("/about");
   }
 
+  const goWip = (event) => {
+    event.preventDefault();
+    history.push("/wip");
+  }
+
   return (
     <ThemeProvider theme={theme}>
 
@@ -74,6 +80,7 @@ function Nav() {
       <div className="navBarContent">
 
         <div className="navLinksLeft">
+
           {/* HOME */}
           <IconButton aria-label="home"
             className="navIconBtn"
@@ -82,6 +89,7 @@ function Nav() {
           >
             <HomeIcon sx={{ fontSize: 26 }} />
           </IconButton>
+
           {/* ABOUT */}
           <IconButton aria-label="about"
             className="navIconBtn"
@@ -90,6 +98,16 @@ function Nav() {
           >
             <InfoIcon sx={{ fontSize: 26 }} />
           </IconButton>
+
+          {/* WIP */}
+          <IconButton aria-label="work in progress"
+            className="navIconBtn"
+            color="primary"
+            onClick={goWip}
+          >
+            <PendingIcon sx={{ fontSize: 26 }} />
+          </IconButton>
+
         </div>
 
         {/* <div className="navMid">
