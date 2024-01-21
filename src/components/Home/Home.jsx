@@ -4,9 +4,9 @@ import Bulletin from '../Bulletin/Bulletin';
 import Projects from '../Projects/Projects';
 
 import hush from './webHush.png';
-import hushZoomCat from './webHushZoomCat.png';
-import hushZoomSkull from './webHushZoomSkullHand.png';
-import hushZoomTendrils from './webHushZoomTendrils.png';
+import hushZoomCat from './webHushZoomCatScan.png';
+import hushZoomSkull from './webHushZoomSkullHandScan.png';
+import hushZoomTendrils from './webHushZoomTendrilsScan.png';
 
 
 // Material UI Imports

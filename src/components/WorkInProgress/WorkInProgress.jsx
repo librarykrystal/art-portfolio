@@ -1,9 +1,8 @@
 import React, { useLayoutEffect } from "react";
 
-import hush from '../Home/webHush.png';
-import hushZoomCat from '../Home/webHushZoomCat.png';
-import hushZoomSkull from '../Home/webHushZoomSkullHand.png';
-import hushZoomTendrils from '../Home/webHushZoomTendrils.png';
+import vicNoirInProg1 from './webVicNoirWIP1.png';
+import vicNoirInProg2 from './webVicNoirWIP2.png';
+import vicNoirInProg3 from './webVicNoirWIP3.png';
 
 // Material UI Imports
 import { createTheme, ThemeProvider } from '@mui/material/styles';
@@ -64,11 +63,15 @@ function WorkInProgress() {
         <div className="latestContainer">
         {/* <div class="lineBreak"></div> */}
 
-        <img className="zoomImage" src={hushZoomTendrils}></img>
-        <img className="zoomImage" src={hushZoomSkull}></img>
-        <img className="zoomImage" src={hushZoomCat}></img>
+        <img className="zoomImage" src={vicNoirInProg1}></img>
+        <img className="zoomImage" src={vicNoirInProg2}></img>
+        <img className="zoomImage" src={vicNoirInProg3}></img>
 
         </div>
+        <center>
+      <Typography variant="body1" mt={15} gutterBottom>© Krystal Frost</Typography>
+      </center>
+      <br/>
       </div>
 
     </ThemeProvider>
