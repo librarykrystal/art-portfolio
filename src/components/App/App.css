@@ -125,13 +125,14 @@ Home — Latest Work / In Progress
 .latestHeader {
   height: 30px;
   margin-top: 25px;
+  padding-bottom: 5px;
 }
 
 .latestContainer {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding-bottom: 30px;
+  padding: 10px 0px 10px 0px;
 }
 
 .zoomImage {
@@ -141,7 +142,7 @@ Home — Latest Work / In Progress
 }
 
 .caption {
-  margin: 0px 0px 0px 0px;
+  margin: 4px 0px 0px 0px;
 }
 
 
@@ -153,13 +154,15 @@ Projects
   grid-row-start: 1;
   display: flex;
   justify-content: center;
-  height: 45px;
+  height: 80px;
   margin-top: 30px;
   margin-bottom: 0px;
+  padding-bottom: 10px;
   color: white;
   /* background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(9,0,36,1) 5%, rgba(135,43,68,1) 70%, #b77862 100%); */
   /* background: linear-gradient(90deg, rgba(0,0,0,1) 0%, #000022 5%, #005a61 70%, #639b83 100%); */
-  background: linear-gradient(90deg, rgba(0,0,0,1) 20%, gray 70%, #fff 100%);
+  /* background: linear-gradient(90deg, rgba(0,0,0,1) 20%, gray 70%, #fff 100%); */
+  background: black;
   text-align: center;
 }
 
@@ -173,7 +176,7 @@ Projects
 .projectsInnerContainer{
   background-color: black;
   padding-bottom: 70px;
-  padding-top: 50px;
+  padding-top: 5px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;

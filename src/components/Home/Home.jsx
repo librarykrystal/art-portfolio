@@ -65,15 +65,15 @@ function Home() {
 
         <img className="latestImageLandscape" src={hush}></img>
         <div className="caption">
-          <Typography component={'span'} variant="body1" sx={{ textAlign: "justify"}}gutterBottom>
-          <Box fontWeight="bold" fontStyle="italic" display='inline'>Hush</Box>, 16x20 acrylic on canvas
-          </Typography>
-        </div>
-
-        <div className="caption">
-          <Typography component={'span'} variant="body1" sx={{ textAlign: "justify"}}gutterBottom>
-          Featured in 2024 Surrealist gallery exhibition <Box fontStyle="italic" display='inline'>Where Ideas Come From</Box>
-          </Typography>
+          <center>
+            <Typography component={'span'} variant="body1" sx={{ textAlign: "justify"}}gutterBottom>
+              <Box fontWeight="bold" fontStyle="italic" display='inline'>Hush</Box>, 16x20 acrylic on canvas
+            </Typography>
+            <div className="lineBreak"></div>
+            <Typography component={'span'} variant="body1" sx={{ textAlign: "justify"}}gutterBottom>
+              Featured in 2024 Surrealist gallery exhibition <Box fontStyle="italic" display='inline'>Where Ideas Come From</Box>
+            </Typography>
+          </center>
         </div>
 
         <div className="latestContainer">

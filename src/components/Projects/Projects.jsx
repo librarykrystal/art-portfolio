@@ -70,15 +70,15 @@ function Projects() {
         </Typography>
       </div> */}
 
-      {/* <div className="projectsHeaderBox">
-        <Typography component={'span'} className="projectsHeaderText" variant="h4" fontWeight="bold" sx={{fontSize: 18}} gutterBottom>
-          WORKS
-        </Typography>
-      </div> */}
+      <div className="projectsHeaderBox">
+      <Typography color="secondary"  variant="h3" fontWeight="bold" mt={7} sx={{fontSize: 24}} gutterBottom>
+              PORTRAIT GALLERY
+            </Typography>
+      </div>
 
       <div className="projectsOuterContainer">
-        <div className="projectsInnerContainer">
 
+        <div className="projectsInnerContainer">
           <img className="canvasImagePortrait" src={prince}></img>
           <img className="canvasImagePortrait" src={winehouse}></img>
           <div className="lineBreak"></div>
