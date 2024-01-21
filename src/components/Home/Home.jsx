@@ -78,7 +78,7 @@ function Home() {
 
         <div className="caption">
           <Typography component={'span'} variant="body1" sx={{ textAlign: "justify"}}gutterBottom>
-          Featured in 2024 Surrealist gallery exhibition <Box fontWeight="bold" fontStyle="italic" display='inline'>Where Ideas Come From</Box>
+          Featured in 2024 Surrealist gallery exhibition <Box fontStyle="italic" display='inline'>Where Ideas Come From</Box>
           </Typography>
         </div>
 
