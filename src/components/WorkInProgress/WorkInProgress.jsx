@@ -54,10 +54,10 @@ function WorkInProgress() {
           </Typography>
         </div>
 
-        <img className="latestImageLandscape" src={hush}></img>
-        <div className="caption">
-          <Typography component={'span'} variant="body1" sx={{ textAlign: "justify"}}gutterBottom>
-          details about current work
+        {/* <img className="latestImageLandscape" src={hush}></img> */}
+        <div className="intro">
+          <Typography variant="body1" sx={{ textIndent: "40px", textAlign: "justify"}}gutterBottom>
+          Krystal is currently working on a "portrait" of sorts: a 16x20 canvas depicting the tomb effigy of Victor Noir in Paris' famous Père Lachaise Cemetery.  Full of detail and texture balanced with soft areas of less focus that help draw the eye to the subject monument, this work is already striking. Krystal was drawn to this subject due to her own travels as well as her heaping affinity for both verdigris and juicy stories.  This painting is from the perspective of one looking down at Victor's face, with subtle but ominous shadows hinting at his murderer left standing.
           </Typography>
         </div>
 
