@@ -61,7 +61,7 @@ function Home() {
       <div className="container">
 
         {/* Consuming Bulletin Component when desired, commenting out when not */}
-        <Bulletin />
+        {/* <Bulletin /> */}
 
         <div className="latestHeader">
           <Typography component={'span'} className="inProgHeaderText" variant="h3" fontWeight="bold" mb={0} sx={{fontSize: 24}} gutterBottom>
@@ -73,6 +73,12 @@ function Home() {
         <div className="caption">
           <Typography component={'span'} variant="body1" sx={{ textAlign: "justify"}}gutterBottom>
           <Box fontWeight="bold" fontStyle="italic" display='inline'>Hush</Box>, 16x20 acrylic on canvas
+          </Typography>
+        </div>
+
+        <div className="caption">
+          <Typography component={'span'} variant="body1" sx={{ textAlign: "justify"}}gutterBottom>
+          Featured in 2024 Surrealist gallery exhibition <Box fontWeight="bold" fontStyle="italic" display='inline'>Where Ideas Come From</Box>
           </Typography>
         </div>
 
