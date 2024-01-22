@@ -117,6 +117,10 @@ Bulletin — Optional News / Alerts at Top of /home
 Home — Latest Work / In Progress
 ----------------------------------------------------------------- */
 
+.coverImage {
+  width: 100%;
+}
+
 .latestImageLandscape {
   margin: 10px 20px 0px 20px;
   max-width: 100%;

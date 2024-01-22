@@ -1,6 +1,7 @@
 import React, { useLayoutEffect } from "react";
 
 import Bulletin from '../Bulletin/Bulletin';
+import homeImage from './artSiteCoverImages.png';
 
 // Material UI Imports
 import { createTheme, ThemeProvider } from '@mui/material/styles';
@@ -45,7 +46,8 @@ function Home() {
 
   return (
     <ThemeProvider theme={theme}>
-      <div className="container">
+      <div className="homeContainer">
+        <img className="coverImage" src={homeImage}></img>
 
       </div>
     </ThemeProvider>
