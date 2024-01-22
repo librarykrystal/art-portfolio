@@ -1,13 +1,6 @@
 import React, { useLayoutEffect } from "react";
 
 import Bulletin from '../Bulletin/Bulletin';
-import Projects from '../Projects/Projects';
-
-import hush from './webHush.png';
-import hushZoomCat from './webHushZoomCatScan.png';
-import hushZoomSkull from './webHushZoomSkullHandScan.png';
-import hushZoomTendrils from './webHushZoomTendrilsScan.png';
-
 
 // Material UI Imports
 import { createTheme, ThemeProvider } from '@mui/material/styles';
@@ -54,43 +47,7 @@ function Home() {
     <ThemeProvider theme={theme}>
       <div className="container">
 
-        {/* Consuming Bulletin Component when desired, commenting out when not */}
-        {/* <Bulletin /> */}
-
-        <div className="latestHeader">
-          <Typography component={'span'} className="inProgHeaderText" variant="h3" fontWeight="bold" mb={0} sx={{fontSize: 24}} gutterBottom>
-            LATEST CANVAS
-          </Typography>
-        </div>
-
-        <img className="latestImageLandscape" src={hush}></img>
-        <div className="caption">
-          <center>
-            <Typography component={'span'} variant="body1" sx={{ textAlign: "justify"}}gutterBottom>
-              <Box fontWeight="bold" fontStyle="italic" display='inline'>Hush</Box>, 16x20 acrylic on canvas
-            </Typography>
-            <div className="lineBreak"></div>
-            <Typography component={'span'} variant="body1" sx={{ textAlign: "justify"}}gutterBottom>
-              Featured in 2024 Surrealist gallery exhibition <Box fontStyle="italic" display='inline'>Where Ideas Come From</Box>
-            </Typography>
-          </center>
-        </div>
-
-        <div className="latestContainer">
-        
-        
-        {/* <div class="lineBreak"></div> */}
-
-        <img className="zoomImage" src={hushZoomTendrils}></img>
-        <img className="zoomImage" src={hushZoomSkull}></img>
-        <img className="zoomImage" src={hushZoomCat}></img>
-
-        </div>
       </div>
-
-      {/* Consuming Projects Component */}
-      <Projects />
-
     </ThemeProvider>
   );
 }
