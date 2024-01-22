@@ -47,10 +47,9 @@ function Header() {
       <div className="headerOuter">
 
         <div className="headerName">
-          <Typography variant="h3" mt={1.4} mb={0}  gutterBottom>
+          <Typography variant="h3" mt={0} mb={0}  gutterBottom>
             Krystal Frost
           </Typography>
-          {/* <h1>Krystal Frost</h1> */}
         </div>
 
         <div className="subheader">

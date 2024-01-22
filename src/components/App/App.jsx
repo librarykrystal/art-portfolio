@@ -9,6 +9,8 @@ import './App.css';
 import Header from '../Header/Header';
 import Nav from '../Nav/Nav';
 import Home from '../Home/Home';
+import Paintings from '../Paintings/Paintings';
+import Photographs from '../Photographs/Photographs';
 import About from '../About/About';
 import WorkInProgress from '../WorkInProgress/WorkInProgress';
 
@@ -25,6 +27,14 @@ function App() {
 
           <Route exact path="/home">
             <Home />
+          </Route>
+
+          <Route exact path="/paintings">
+            <Paintings />
+          </Route>
+
+          <Route exact path="/photographs">
+            <Photographs />
           </Route>
 
           <Route exact path="/about">

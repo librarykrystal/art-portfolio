@@ -14,14 +14,14 @@ import '@fontsource/albert-sans/400.css';
 import IconButton from '@mui/material/IconButton';
 import HomeIcon from '@mui/icons-material/Home';
 import InfoIcon from '@mui/icons-material/Info';
-import GitHubIcon from '@mui/icons-material/GitHub';
+import PaletteIcon from '@mui/icons-material/Palette';
+import CameraIcon from '@mui/icons-material/Camera';
+import PendingIcon from '@mui/icons-material/Pending';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import PortraitIcon from '@mui/icons-material/Portrait';
-import BrushIcon from '@mui/icons-material/Brush';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import CodeIcon from '@mui/icons-material/Code';
 import InstagramIcon from '@mui/icons-material/Instagram';
-import PendingIcon from '@mui/icons-material/Pending';
+
 
 
 // Material UI Theming
@@ -56,6 +56,16 @@ function Nav() {
     history.push("/home");
   }
 
+  const goPaintings = (event) => {
+    event.preventDefault();
+    history.push("/paintings");
+  }
+
+  const goPhotos = (event) => {
+    event.preventDefault();
+    history.push("/photographs");
+  }
+
   const goAbout = (event) => {
     event.preventDefault();
     history.push("/about");
@@ -88,6 +98,24 @@ function Nav() {
             onClick={goHome}
           >
             <HomeIcon sx={{ fontSize: 26 }} />
+          </IconButton>
+
+          {/* PAINTINGS */}
+          <IconButton aria-label="paintings"
+            className="navIconBtn"
+            color="primary"
+            onClick={goPaintings}
+          >
+            <PaletteIcon sx={{ fontSize: 26 }} />
+          </IconButton>
+
+          {/* PHOTOGRAPHS */}
+          <IconButton aria-label="paintings"
+            className="navIconBtn"
+            color="primary"
+            onClick={goPhotos}
+          >
+            <CameraIcon sx={{ fontSize: 26 }} />
           </IconButton>
 
           {/* ABOUT */}
