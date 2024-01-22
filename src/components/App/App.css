@@ -21,7 +21,7 @@ Header
   flex-direction: column;
   grid-template-rows: 2;
   top: 0;
-  height: 100px;
+  height: 115px;
 }
 
 .headerName {
