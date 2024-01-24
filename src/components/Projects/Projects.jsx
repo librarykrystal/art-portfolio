@@ -58,18 +58,6 @@ function Projects() {
   return (
     <ThemeProvider theme={theme}>
 
-      {/* <div className="projectsHeaderBox">
-        <Typography className="projectsHeaderText" variant="h5" sx={{fontSize: 18, width: "170px", borderLeft: "5px solid #6f2c3f", borderRight: "5px solid #8f454c"}} gutterBottom>
-          PROJECTS
-        </Typography>
-      </div> */}
-{/* 
-      <div className="projectsHeaderBox">
-        <Typography className="projectsHeaderText" variant="h4" fontWeight="bold" sx={{fontSize: 28, width: "150px", borderLeft: "5px solid #6f2c3f", borderRight: "5px solid #8f454c"}} gutterBottom>
-          Projects
-        </Typography>
-      </div> */}
-
       <div className="projectsHeaderBox">
       <Typography color="secondary"  variant="h3" fontWeight="bold" mt={7} sx={{fontSize: 24}} gutterBottom>
               PORTRAIT GALLERY

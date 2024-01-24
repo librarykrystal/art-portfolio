@@ -46,7 +46,7 @@ function Header() {
   }, []);
 
   const { pathname } = useLocation();
-  console.log(pathname);
+  // console.log(pathname);
 
   return (
     <ThemeProvider theme={theme}>
@@ -66,12 +66,12 @@ function Header() {
         {/* CONDITIONAL RENDERS to show proper subheader depending on route */}
           { pathname == '/photographs' && 
             <Typography variant="body1" color="secondary" display="block" mt={-1} mb={0} sx={{fontSize: "14pt"}} gutterBottom>
-              PHOTOGRAPHY
+              PHOTOGRAPHS
             </Typography>
           }
           { pathname == '/paintings' && 
             <Typography variant="body1" color="secondary" display="block" mt={-1} mb={0} sx={{fontSize: "14pt"}} gutterBottom>
-              PAINTING
+              PAINTINGS
             </Typography>
           }
           { pathname == '/home' && 

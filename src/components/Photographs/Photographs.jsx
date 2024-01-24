@@ -63,9 +63,7 @@ function Photographs() {
   return (
     <ThemeProvider theme={theme}>
       <div className="container">
-        {/* <Typography component={'span'} variant="body1" sx={{ textAlign: "justify"}}gutterBottom>
-          Photography gallery coming soon
-        </Typography> */}
+
         <div className="photosetContainer">
 
           <img className="photograph" src={ParisLePenseur}></img>
@@ -88,7 +86,6 @@ function Photographs() {
           <img className="photograph" src={LondonWhalePeek}></img>
 
         </div>
-
 
       </div>
       <center>

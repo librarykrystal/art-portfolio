@@ -10,6 +10,7 @@ body {
   background-color: white;
 }
 
+
 /* -----------------------------------------------------------------
 Header
 ----------------------------------------------------------------- */
@@ -21,7 +22,7 @@ Header
   flex-direction: column;
   grid-template-rows: 2;
   top: 0;
-  height: 130px;
+  height: 133px;
 }
 
 .headerName {
@@ -68,13 +69,6 @@ Nav Bar
   width: 115px;
   margin: 0px 0px 0px 10px;
 }
-
-/* .navMid {
-  grid-column-start: 2;
-  display: flex;
-  justify-content: center;
-  justify-self: center;
-} */
 
 .navLinksRight {
   grid-column-start: 3;
@@ -179,8 +173,7 @@ Projects
 
 .projectsInnerContainer{
   background-color: black;
-  padding-bottom: 70px;
-  padding-top: 5px;
+  padding: 5px 20px 70px 20px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -206,6 +199,7 @@ Projects
 
 .canvasImageLandscape {
   margin: 10px 20px 25px 20px;
+  width: 100%;
   max-width: 400px;
 }
 
@@ -267,6 +261,8 @@ Photographs
 
 .photograph {
   margin: 10px;
+  width: 100%;
+  max-width: 500px;
 }
 
 /* -----------------------------------------------------------------
