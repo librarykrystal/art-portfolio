@@ -41,6 +41,11 @@ function About() {
   return (
     <ThemeProvider theme={theme}>
       <div className="container">
+      <div className="latestHeader">
+          <Typography component={'span'} className="inProgHeaderText" variant="h3" fontWeight="bold" mb={0} sx={{fontSize: 24}} gutterBottom>
+            ABOUT THE ARTIST
+          </Typography>
+        </div>
         <img className="aboutPhoto" src={selfPhoto}></img>
         <div className="intro">
           <Typography variant="body1" mt={0} mb={2} sx={{ textIndent: "40px", textAlign: "justify"}}gutterBottom>
