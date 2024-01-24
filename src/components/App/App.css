@@ -253,10 +253,27 @@ Projects
 }
 
 /* -----------------------------------------------------------------
+Photographs
+----------------------------------------------------------------- */
+
+.photosetContainer {
+  background-color: white;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.photograph {
+  margin: 10px;
+}
+
+/* -----------------------------------------------------------------
 About
 ----------------------------------------------------------------- */
 
-.photo {
+.aboutPhoto {
   border: 5px solid black;
   max-width: 250px;
   margin-top: 30px;
