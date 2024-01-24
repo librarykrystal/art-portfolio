@@ -14,6 +14,11 @@ import FairCheer from './webPhotoFairCheer.png';
 import FairHaunt from './webPhotoFairHaunt.png';
 import FairRide from './webPhotoFairRideSky.png';
 import FairSilhouette from './webPhotoFairSilhouette.png';
+import LondonChloro from './webPhotoLondonChloro.png';
+import LondonHolmes from './webPhotoLondonHolmes.png';
+import LondonNatHist from './webPhotoLondonNatHistMus.png';
+import LondonTowerChamber from './webPhotoLondonTowerChamber.png';
+import LondonWhalePeek from './webPhotoLondonWhalePeek.png';
 
 // Material UI Imports
 import { createTheme, ThemeProvider } from '@mui/material/styles';
@@ -75,6 +80,12 @@ function Photographs() {
           <img className="photograph" src={FairHaunt}></img>
           <img className="photograph" src={FairCheer}></img>
           <img className="photograph" src={FairSilhouette}></img>
+
+          <img className="photograph" src={LondonChloro}></img>
+          <img className="photograph" src={LondonHolmes}></img>
+          <img className="photograph" src={LondonNatHist}></img>
+          <img className="photograph" src={LondonTowerChamber}></img>
+          <img className="photograph" src={LondonWhalePeek}></img>
 
         </div>
 
