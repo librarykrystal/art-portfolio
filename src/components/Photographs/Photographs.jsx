@@ -9,6 +9,11 @@ import ParisMannequin from './webPhotoParisMannequin.png';
 import ParisMoulinRouge from './webPhotoParisMoulinRouge.png';
 import ParisPalaisGarnier from './webPhotoParisPalaisGarnier.png';
 import ParisStreetSky from './webPhotoParisStreetSky.png';
+import FairBear from './webPhotoFairBear.png';
+import FairCheer from './webPhotoFairCheer.png';
+import FairHaunt from './webPhotoFairHaunt.png';
+import FairRide from './webPhotoFairRideSky.png';
+import FairSilhouette from './webPhotoFairSilhouette.png';
 
 // Material UI Imports
 import { createTheme, ThemeProvider } from '@mui/material/styles';
@@ -57,16 +62,28 @@ function Photographs() {
           Photography gallery coming soon
         </Typography> */}
         <div className="photosetContainer">
-        <img className="photograph" src={ParisLePenseur}></img>
-        <img className="photograph" src={ParisMoulinRouge}></img>
-        <img className="photograph" src={ParisMannequin}></img>
-        <img className="photograph" src={ParisPalaisGarnier}></img>
-        <img className="photograph" src={ParisStreetSky}></img>
-        <img className="photograph" src={ParisDoorShadow}></img>
+
+          <img className="photograph" src={ParisLePenseur}></img>
+          <img className="photograph" src={ParisMoulinRouge}></img>
+          <img className="photograph" src={ParisMannequin}></img>
+          <img className="photograph" src={ParisPalaisGarnier}></img>
+          <img className="photograph" src={ParisStreetSky}></img>
+          <img className="photograph" src={ParisDoorShadow}></img>
+
+          <img className="photograph" src={FairRide}></img>
+          <img className="photograph" src={FairBear}></img>
+          <img className="photograph" src={FairHaunt}></img>
+          <img className="photograph" src={FairCheer}></img>
+          <img className="photograph" src={FairSilhouette}></img>
+
         </div>
 
 
       </div>
+      <center>
+      <Typography variant="body1" mt={15} gutterBottom>© Krystal Frost</Typography>
+      </center>
+      <br/>
     </ThemeProvider>
   );
 }
