@@ -21,7 +21,7 @@ Header
   flex-direction: column;
   grid-template-rows: 2;
   top: 0;
-  height: 115px;
+  height: 130px;
 }
 
 .headerName {
@@ -31,7 +31,7 @@ Header
 }
 
 h1 {
-  font-family: "Rock Salt";
+  font-family: "Kolker Brush";
 }
 
 .subheader {

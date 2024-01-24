@@ -1,4 +1,5 @@
 import React, { useLayoutEffect } from "react";
+import { useLocation } from 'react-router-dom';
 
 // Material UI Imports
 import { createTheme, ThemeProvider } from '@mui/material/styles';
@@ -29,11 +30,13 @@ const theme = createTheme({
       main: '#d9d9d9',
     },
     secondary: {
-      main: grey[700],
-      contrastText: "#fff",
+      main: grey[500],
+      contrastText: '#fff',
     },
   },
 });
+
+
 
 function Header() {
 
@@ -41,6 +44,9 @@ function Header() {
   useLayoutEffect(() => {
     window.scrollTo(0, 0)
   }, []);
+
+  const { pathname } = useLocation();
+  console.log(pathname);
 
   return (
     <ThemeProvider theme={theme}>
@@ -56,13 +62,26 @@ function Header() {
           <Typography variant="body1" mt={-3} mb={0} sx={{fontSize: "14pt"}} gutterBottom>
             FINE ART
           </Typography>
-        </div>
 
-        {/* <div className="headerFSSD">
-          <Typography variant="body1" mt={0.1} mb={0} ml={-0.5} sx={{width: "100px", borderLeft: "5px solid #6f2c3f", borderRight: "5px solid #8f454c"}} gutterBottom>Full-Stack</Typography>
-          <Typography variant="body1" mt={0} mb={-0.4} ml={-0.5} sx={{width: "100px", borderLeft: "5px solid black", borderRight: "5px solid black"}} gutterBottom>Software</Typography>
-          <Typography variant="body1" mt={0} mb={0} ml={-0.5} sx={{width: "100px", borderLeft: "5px solid black", borderRight: "5px solid black"}} gutterBottom>Developer</Typography>
-        </div> */}
+        {/* CONDITIONAL RENDERS to show proper subheader depending on route */}
+          { pathname == '/photographs' && 
+            <Typography variant="body1" color="secondary" display="block" mt={-1} mb={0} sx={{fontSize: "14pt"}} gutterBottom>
+              PHOTOGRAPHY
+            </Typography>
+          }
+          { pathname == '/paintings' && 
+            <Typography variant="body1" color="secondary" display="block" mt={-1} mb={0} sx={{fontSize: "14pt"}} gutterBottom>
+              PAINTING
+            </Typography>
+          }
+          { pathname == '/home' && 
+            <Typography variant="body1" color="secondary" display="block" mt={-1} mb={0} sx={{fontSize: "14pt"}} gutterBottom>
+              PAINTING & PHOTOGRAPHY
+            </Typography>
+          }
+          
+        </div>
+        <br></br>
 
       </div>
     </ThemeProvider>
