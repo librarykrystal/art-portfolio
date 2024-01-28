@@ -49,7 +49,7 @@ function About() {
         <img className="aboutPhoto" src={selfPhoto}></img>
         <div className="intro">
           <Typography variant="body1" mt={0} mb={2} sx={{ textIndent: "40px", textAlign: "justify"}}gutterBottom>
-          "My art constants, each magnetic, are people and paint.  In earlier portraits I captured facial likeness, while more recent work—bolstered by the addition of slow-drying paints and additives to my acrylic palette—ventures away from such classical sitting depiction and into more vulnerable explorations of mood, texture, and inspiration."
+          "My art constants, each magnetic, are people and paint.  In earlier portraits I captured facial likeness, while more recent work—bolstered by the addition of slow-drying paints and additives to my acrylic palette—ventures away from such classical sitting depiction and into more vulnerable explorations of mood, texture, storytelling, and inspiration."
           </Typography>
           <Typography variant="body1" mt={0} mb={0} sx={{ textIndent: "40px", textAlign: "justify"}}gutterBottom>
           Krystal works out of Minneapolis and, when not painting, can be found sipping coffee with confidants, reading, wandering her favorite museums, and developing for the web (including coding this website from scratch).
