@@ -53,6 +53,25 @@ const theme = createTheme({
   },
 });
 
+const photos = [
+  {id: 101, title: "Le Penseur", set: "Paris", printsAvailable: false, image: ParisLePenseur},
+  {id: 102, title: "Moulin Rouge Exterior", set: "Paris", printsAvailable: false, image: ParisMoulinRouge},
+  {id: 103, title: "Alley Mannequin", set: "Paris", printsAvailable: false, image: ParisMannequin},
+  {id: 104, title: "Curves of the Palais Garnier", set: "Paris", printsAvailable: false, image: ParisPalaisGarnier},
+  {id: 105, title: "Shadowy Montmartre Street", set: "Paris", printsAvailable: false, image: ParisStreetSky},
+  {id: 106, title: "A Shadow Blocks the Exit", set: "Paris", printsAvailable: false, image: ParisDoorShadow},
+  {id: 201, title: "Midway Ride", set: "Fair", printsAvailable: false, image: FairRide},
+  {id: 202, title: "I Can Carry It", set: "Fair", printsAvailable: false, image: FairBear},
+  {id: 203, title: "Haunted Funhouse", set: "Fair", printsAvailable: false, image: FairHaunt},
+  {id: 204, title: "Fair Memory", set: "Fair", printsAvailable: false, image: FairCheer},
+  {id: 205, title: "Darkened Barker", set: "Fair", printsAvailable: false, image: FairSilhouette},
+  {id: 301, title: "Poison Medicine", set: "London", printsAvailable: false, image: LondonChloro},
+  {id: 302, title: "Holmes", set: "London", printsAvailable: false, image: LondonHolmes},
+  {id: 303, title: "Natural History Architecture", set: "London", printsAvailable: false, image: LondonNatHist},
+  {id: 304, title: "Tower Chamber", set: "London", printsAvailable: false, image: LondonTowerChamber},
+  {id: 305, title: "Hope Through Stained Glass", set: "London", printsAvailable: false, image: LondonWhalePeek},
+];
+
 function Photographs() {
 
   // Makes each view load scrolled to top
@@ -66,24 +85,11 @@ function Photographs() {
 
         <div className="photosetContainer">
 
-          <img className="photograph" src={ParisLePenseur}></img>
-          <img className="photograph" src={ParisMoulinRouge}></img>
-          <img className="photograph" src={ParisMannequin}></img>
-          <img className="photograph" src={ParisPalaisGarnier}></img>
-          <img className="photograph" src={ParisStreetSky}></img>
-          <img className="photograph" src={ParisDoorShadow}></img>
-
-          <img className="photograph" src={FairRide}></img>
-          <img className="photograph" src={FairBear}></img>
-          <img className="photograph" src={FairHaunt}></img>
-          <img className="photograph" src={FairCheer}></img>
-          <img className="photograph" src={FairSilhouette}></img>
-
-          <img className="photograph" src={LondonChloro}></img>
-          <img className="photograph" src={LondonHolmes}></img>
-          <img className="photograph" src={LondonNatHist}></img>
-          <img className="photograph" src={LondonTowerChamber}></img>
-          <img className="photograph" src={LondonWhalePeek}></img>
+          {photos.map(photo => {
+            return (
+              <img className="photograph" key={photo.id} src={photo.image}></img>
+            )
+          })}
 
         </div>
 
