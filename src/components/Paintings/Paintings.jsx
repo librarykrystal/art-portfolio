@@ -56,18 +56,18 @@ const theme = createTheme({
 });
 
 const artworks = [
-  {id: 23, title: "Hush", year: 2023, set: "new", origAvailable: false, printAvailable: true, image: hush},
-  {id: 22, title: "Prince", year: 2023, set: "portrait", origAvailable: false, printAvailable: true, image: prince},
-  {id: 21, title: "Amy Winehouse", year: 2022, set: "portrait", origAvailable: false, printAvailable: true, image: winehouse},
-  {id: 20, title: "Nina Simone", year: 2021, set: "portrait", origAvailable: false, printAvailable: true, image: simone},
-  {id: 19, title: "Vladimir Nabokov", year: 2021, set: "portrait", origAvailable: false, printAvailable: true, image: nabokov},
-  {id: 18, title: "Oscar Wilde", year: 2020, set: "portrait", origAvailable: false, printAvailable: true, image: wilde},
-  {id: 17, title: "Edgar Allan Poe", year: 2020, set: "portrait", origAvailable: false, printAvailable: true, image: poe},
-  {id: 15, title: "Vincent Price", year: 2019, set: "portrait", origAvailable: false, printAvailable: true, image: price},
-  {id: 14, title: "Orson Welles", year: 2017, set: "portrait", origAvailable: false, printAvailable: true, image: welles},
-  {id: 13, title: "Ella Fitzgerald", year: 2015, set: "portrait", origAvailable: false, printAvailable: true, image: fitzgerald},
-  {id: 12, title: "Rod Serling", year: 2014, set: "portrait", origAvailable: false, printAvailable: true, image: serling},
-  {id: 10, title: "Alfred Hitchcock", year: 2014, set: "portrait", origAvailable: false, printAvailable: true, image: hitchcock},
+  {id: 23, title: "Hush", year: 2023, set: "latest", orientation: "canvasLandscape", origAvailable: false, printAvailable: true, image: hush},
+  {id: 22, title: "Prince", year: 2023, set: "portrait", orientation: "canvasPortrait", origAvailable: false, printAvailable: true, image: prince},
+  {id: 21, title: "Amy Winehouse", year: 2022, set: "portrait", orientation: "canvasPortrait", origAvailable: false, printAvailable: true, image: winehouse},
+  {id: 20, title: "Nina Simone", year: 2021, set: "portrait", orientation: "canvasPortrait", origAvailable: false, printAvailable: true, image: simone},
+  {id: 19, title: "Vladimir Nabokov", year: 2021, set: "portrait", orientation: "canvasPortrait", origAvailable: false, printAvailable: true, image: nabokov},
+  {id: 18, title: "Oscar Wilde", year: 2020, set: "portrait", orientation: "canvasPortrait", origAvailable: false, printAvailable: true, image: wilde},
+  {id: 17, title: "Edgar Allan Poe", year: 2020, set: "portrait", orientation: "canvasPortrait", origAvailable: false, printAvailable: true, image: poe},
+  {id: 15, title: "Vincent Price", year: 2019, set: "portrait", orientation: "canvasLandscape", origAvailable: false, printAvailable: true, image: price},
+  {id: 14, title: "Orson Welles", year: 2017, set: "portrait", orientation: "canvasPortrait", origAvailable: false, printAvailable: true, image: welles},
+  {id: 13, title: "Ella Fitzgerald", year: 2015, set: "portrait", orientation: "canvasLandscape", origAvailable: false, printAvailable: true, image: fitzgerald},
+  {id: 12, title: "Rod Serling", year: 2014, set: "portrait", orientation: "canvasLandscape", origAvailable: false, printAvailable: true, image: serling},
+  {id: 10, title: "Alfred Hitchcock", year: 2014, set: "portrait", orientation: "canvasLandscape", origAvailable: false, printAvailable: true, image: hitchcock},
 ];
 
 function Paintings() {
@@ -76,8 +76,6 @@ function Paintings() {
   useLayoutEffect(() => {
     window.scrollTo(0, 0)
   }, []);
-
-  console.log(artworks);
 
   return (
     <ThemeProvider theme={theme}>
@@ -122,7 +120,17 @@ function Paintings() {
 
         {/* images of older completd works */}
         <div className="paintingsSectionContainer">
-         <img className="canvasImagePortrait" src={prince}></img>
+         
+         {/* map through artworks and show only those that are not of set LATEST */}
+         {artworks.map(art => {
+            return (
+              <div className="canvasContainer" key={art.id}>
+                {art.set != 'latest' &&
+                  <img className={art.orientation}  src={art.image}></img>
+                }
+              </div>
+            )
+          })}
         </div>
         
         {/* copyright */}

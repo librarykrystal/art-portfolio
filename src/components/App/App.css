@@ -157,7 +157,7 @@ Paintings
 .paintingsOuterContainer{
   background-color: black;
   display: flex;
-  width: 100%;
+  /* width: 100%; */
   flex-direction: column;
   justify-content: center;
   padding: 30px 10px 0px 10px;
@@ -173,14 +173,18 @@ Paintings
   align-items: center;
 }
 
-.canvasImagePortrait {
-  margin: 10px 20px 25px 20px;
+.canvasContainer {
+  padding: 10px;
+}
+
+.canvasPortrait {
+  /* margin: 10px 20px 25px 20px; */
   width: 100%;
   max-width: 300px;
 }
 
-.canvasImageLandscape {
-  margin: 10px 20px 25px 20px;
+.canvasLandscape {
+  /* margin: 10px 20px 25px 20px; */
   width: 100%;
   max-width: 400px;
 }
