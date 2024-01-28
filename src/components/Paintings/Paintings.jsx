@@ -1,7 +1,6 @@
 import React, { useLayoutEffect } from "react";
 
 import Bulletin from '../Bulletin/Bulletin';
-import Projects from '../Projects/Projects';
 
 // imports of latest work and zoom-in images
 import hush from './webHush.png';
