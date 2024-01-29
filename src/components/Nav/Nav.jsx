@@ -79,14 +79,6 @@ function Nav() {
   return (
     <ThemeProvider theme={theme}>
 
-      {/* <div className="navFSSD">
-        <Typography component={'span'} variant="body1" mt={0.1} mb={0} ml={-0.5} sx={{width: "100px", borderLeft: "5px solid #184d58", borderRight: "5px solid #2f6b6a"}} gutterBottom>Painter</Typography>
-        <Typography component={'span'} variant="body1" mt={0} mb={-0.4} ml={-0.5} sx={{width: "100px", borderLeft: "5px solid black", borderRight: "5px solid black"}} gutterBottom>of</Typography>
-        <Typography component={'span'} variant="body1" mt={0} mb={0} ml={-0.5} sx={{width: "100px", borderLeft: "5px solid black", borderRight: "5px solid black"}} gutterBottom>Canvas</Typography>
-      </div> */}
-
-      {/* <div className="navBarUpper"></div> */}
-
       <div className="navBarContent">
 
         <div className="navLinksLeft">

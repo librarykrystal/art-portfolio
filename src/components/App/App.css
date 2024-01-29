@@ -23,6 +23,10 @@ Header
   grid-template-rows: 2;
   top: 0;
   height: 133px;
+  position: fixed;
+  width: 100%;
+  z-index: 5000;
+  background-color: white;
 }
 
 .headerName {
@@ -49,14 +53,16 @@ Nav Bar
 
 .navBarContent {
   height: 40px;
-  margin-top: 0px;
+  margin-top: 133px;
   margin-bottom: 0px;
-  color: white;
   width: 100%;
   display: grid;
   grid-template-columns: 3;
+  background-color: white;
   border-bottom: black 2px solid;
-  /* grid-column-gap: 115px; */
+  position: fixed;
+  width: 100%;
+  z-index: 4000;
 }
 
 .navLinksLeft {
@@ -83,11 +89,13 @@ General / Misc
 ----------------------------------------------------------------- */
 
 .container {
-  padding: 20px 20px 0px 20px;
+  /* margin-top: 173px; */
+  padding: 193px 20px 0px 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  /* width: 100%; */
 }
 
 .lineBreak {
@@ -116,6 +124,10 @@ Bulletin — Optional News / Alert at Top of /home
 /* -----------------------------------------------------------------
 Home 
 ----------------------------------------------------------------- */
+
+.homeContainer {
+  padding-top: 173px;
+}
 
 .coverImage {
   width: 100%;
