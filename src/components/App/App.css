@@ -180,6 +180,12 @@ Paintings
   margin: 25px 5px 5px 5px;
 }
 
+.portraitureHeader {
+  height: 30px;
+  margin-top: 25px;
+  padding-bottom: 15px;
+}
+
 .paintingsOuterContainer{
   background-color: black;
   display: flex;

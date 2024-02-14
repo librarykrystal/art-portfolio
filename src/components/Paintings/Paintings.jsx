@@ -59,7 +59,8 @@ const theme = createTheme({
 });
 
 const artworks = [
-  {id: 23, title: "Hush", year: 2023, set: "latest", orientation: "canvasLandscape", origAvailable: false, printAvailable: true, image: hush},
+  {id: 24, title: "The Effigy of Victor Noir", year: 2024, set: "latest", orientation: "canvasLandscape", origAvailable: false, printAvailable: false, image: noir},
+  {id: 23, title: "Hush", year: 2023, set: "recent", orientation: "canvasLandscape", origAvailable: false, printAvailable: true, image: hush},
   {id: 22, title: "Prince", year: 2023, set: "portrait", orientation: "canvasPortrait", origAvailable: false, printAvailable: true, image: prince},
   {id: 21, title: "Amy Winehouse", year: 2022, set: "portrait", orientation: "canvasPortrait", origAvailable: false, printAvailable: true, image: winehouse},
   {id: 20, title: "Nina Simone", year: 2021, set: "portrait", orientation: "canvasPortrait", origAvailable: false, printAvailable: true, image: simone},
@@ -98,12 +99,8 @@ function Paintings() {
         <div className="captionUnder">
           <center>
             <Typography component={'span'} variant="body1" sx={{ textAlign: "justify"}}gutterBottom>
-              <Box fontWeight="bold" fontStyle="italic" display='inline'>The Effigy of Victor Noir</Box>, 16x20 acrylic on canvas
+              <Box fontWeight="bold" fontStyle="italic" display='inline'>The Effigy of Victor Noir</Box>, 16x20 acrylic on canvas, 2024
             </Typography>
-            {/* <div className="lineBreak"></div>
-            <Typography component={'span'} variant="body1" sx={{ textAlign: "justify"}}gutterBottom>
-              Featured in 2024 Surrealist gallery exhibition <Box fontStyle="italic" display='inline'>Where Ideas Come From</Box>
-            </Typography> */}
           </center>
         </div>
 
@@ -127,7 +124,7 @@ function Paintings() {
         <div className="captionUnder">
           <center>
             <Typography component={'span'} variant="body1" sx={{ textAlign: "justify"}}gutterBottom>
-              <Box fontWeight="bold" fontStyle="italic" display='inline'>Hush</Box>, 16x20 acrylic on canvas
+              <Box fontWeight="bold" fontStyle="italic" display='inline'>Hush</Box>, 16x20 acrylic on canvas, 2023
             </Typography>
             <div className="lineBreak"></div>
             <Typography component={'span'} variant="body1" sx={{ textAlign: "justify"}}gutterBottom>
@@ -141,8 +138,8 @@ function Paintings() {
       {/* OLDER / PORTRAIT WORKS GALLERY */}
       <div className="paintingsOuterContainer">
 
-        <div className="latestHeader">
-          <Typography color="secondary" className="inProgHeaderText" variant="h3" fontWeight="bold" mb={0} sx={{fontSize: 24}} gutterBottom>
+        <div className="portraitureHeader">
+          <Typography component={'span'} color="secondary" className="inProgHeaderText" variant="h3" fontWeight="bold" mb={0} sx={{fontSize: 24}} gutterBottom>
             PORTRAITURE 2014-2023
           </Typography>
         </div>
@@ -154,7 +151,7 @@ function Paintings() {
          {artworks.map(art => {
             return (
               <span key={art.id}>
-                {art.set != 'latest' &&
+                {art.set == 'portrait' &&
                 <div className="canvasContainer">
                   <img className={art.orientation}  src={art.image}></img>
                   </div>
