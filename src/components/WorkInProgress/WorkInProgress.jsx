@@ -56,8 +56,11 @@ function WorkInProgress() {
 
         {/* <img className="latestImageLandscape" src={hush}></img> */}
         <div className="intro">
+          <Typography variant="body1" mb={2} sx={{ textIndent: "40px", textAlign: "justify"}}gutterBottom>
+          Krystal is deep in the rabbit-hole of conceptualizing her next piece: a self-reflective scene themed after Lewis Carroll’s <Box fontStyle="italic" display='inline'>Alice’s Adventures in Wonderland</Box> and <Box fontStyle="italic" display='inline'>Through the Looking-Glass</Box>.  This work will see the return of Krystal’s “main character” previously seen in <Box fontStyle="italic" display='inline'>Hush</Box>—a headless female figure holding a skull, a traumatized being that the viewer may see as defeated or victorious, while at once surreal and perhaps relatable—this time, in the role of an adult Alice who has become a permanent inhabitant of Wonderland.
+          </Typography>
           <Typography variant="body1" sx={{ textIndent: "40px", textAlign: "justify"}}gutterBottom>
-          Krystal is currently working on a "portrait" of sorts: a 16x20 canvas depicting the tomb effigy of Victor Noir in Paris' famous Père Lachaise Cemetery.  Full of detail and texture balanced with soft areas of less focus that help draw the eye to the central monument, this work is already striking. Krystal was drawn to this subject due to her own travels as well as her heaping affinity for both verdigris and dramatic life stories.  This painting is from the perspective of one looking down at Victor's face, with red autumn leaves standing in for spilled blood and an ominous shadow hinting at his murderer left standing.
+          Stay tuned for behind-the-scenes updates on this work-in-progess.
           </Typography>
         </div>
 
