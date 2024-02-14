@@ -1,9 +1,9 @@
 import React, { useLayoutEffect } from "react";
 
-import vicNoirInProg1 from './webVicNoirWIP1.png';
-import vicNoirInProg2 from './webVicNoirWIP2.png';
-import vicNoirInProg3 from './webVicNoirWIP3.png';
-import vicNoirInProg4 from './webVicNoirWIP4.png';
+// import vicNoirInProg1 from './webVicNoirWIP1.png';
+// import vicNoirInProg2 from './webVicNoirWIP2.png';
+// import vicNoirInProg3 from './webVicNoirWIP3.png';
+// import vicNoirInProg4 from './webVicNoirWIP4.png';
 
 // Material UI Imports
 import { createTheme, ThemeProvider } from '@mui/material/styles';
@@ -64,10 +64,9 @@ function WorkInProgress() {
         <div className="latestCloseupsContainer">
         {/* <div class="lineBreak"></div> */}
 
-        <img className="zoomImage" src={vicNoirInProg1}></img>
-        <img className="zoomImage" src={vicNoirInProg2}></img>
-        {/* <img className="zoomImage" src={vicNoirInProg3}></img> */}
-        <img className="zoomImage" src={vicNoirInProg4}></img>
+        {/* <img className="zoomImage" src={vicNoirInProg1}></img> */}
+        {/* <img className="zoomImage" src={vicNoirInProg2}></img> */}
+        {/* <img className="zoomImage" src={vicNoirInProg4}></img> */}
 
         </div>
         <center>
