@@ -153,11 +153,13 @@ function Paintings() {
          {/* map through artworks and show only those that are not of set LATEST */}
          {artworks.map(art => {
             return (
-              <div className="canvasContainer" key={art.id}>
+              <span key={art.id}>
                 {art.set != 'latest' &&
+                <div className="canvasContainer">
                   <img className={art.orientation}  src={art.image}></img>
+                  </div>
                 }
-              </div>
+              </span>
             )
           })}
         </div>
