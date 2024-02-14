@@ -3,10 +3,13 @@ import React, { useLayoutEffect } from "react";
 import Bulletin from '../Bulletin/Bulletin';
 
 // imports of latest work and zoom-in images
+import noir from './webNoir.png';
+import noirZoomFace from './webNoirZoomFace.png';
+import noirZoomLapel from './webNoirZoomLapel.png';
+import noirZoomLeaf from './webNoirZoomLeaf.png';
+
+// imports of completed recent works
 import hush from './webHush.png';
-import hushZoomCat from './webHushZoomCatScan.png';
-import hushZoomSkull from './webHushZoomSkullHandScan.png';
-import hushZoomTendrils from './webHushZoomTendrilsScan.png';
 
 // imports of older portraiture works
 import fitzgerald from './webFitzgeraldE.png';
@@ -86,11 +89,40 @@ function Paintings() {
 
         <div className="latestHeader">
           <Typography component={'span'} className="inProgHeaderText" variant="h3" fontWeight="bold" mb={0} sx={{fontSize: 24}} gutterBottom>
-            LATEST CANVAS
+            LATEST WORK
           </Typography>
         </div>
 
         {/* LATEST main image and caption */}
+        <img className="latestImageLandscape" src={noir}></img>
+        <div className="captionUnder">
+          <center>
+            <Typography component={'span'} variant="body1" sx={{ textAlign: "justify"}}gutterBottom>
+              <Box fontWeight="bold" fontStyle="italic" display='inline'>The Effigy of Victor Noir</Box>, 16x20 acrylic on canvas
+            </Typography>
+            {/* <div className="lineBreak"></div>
+            <Typography component={'span'} variant="body1" sx={{ textAlign: "justify"}}gutterBottom>
+              Featured in 2024 Surrealist gallery exhibition <Box fontStyle="italic" display='inline'>Where Ideas Come From</Box>
+            </Typography> */}
+          </center>
+        </div>
+
+        {/* LATEST closeup images */}
+        <div className="latestCloseupsContainer">
+          <img className="zoomImage" src={noirZoomLeaf}></img>
+          <img className="zoomImage" src={noirZoomLapel}></img>
+          <img className="zoomImage" src={noirZoomFace}></img>
+        </div>
+
+      </div>
+
+      <div className="horizontalLine"></div>
+
+
+      {/* RECENT work container */}
+      <div className="containerAdditional">
+        
+        {/* RECENT image and caption */}
         <img className="latestImageLandscape" src={hush}></img>
         <div className="captionUnder">
           <center>
@@ -103,22 +135,19 @@ function Paintings() {
             </Typography>
           </center>
         </div>
-
-        {/* LATEST closeup images */}
-        <div className="latestCloseupsContainer">
-          <img className="zoomImage" src={hushZoomTendrils}></img>
-          <img className="zoomImage" src={hushZoomSkull}></img>
-          <img className="zoomImage" src={hushZoomCat}></img>
-        </div>
-
       </div>
-      {/* end main container */}
 
 
-      {/* OLDER / COMPLETED WORKS GALLERY */}
+      {/* OLDER / PORTRAIT WORKS GALLERY */}
       <div className="paintingsOuterContainer">
 
-        {/* images of older completd works */}
+        <div className="latestHeader">
+          <Typography color="secondary" className="inProgHeaderText" variant="h3" fontWeight="bold" mb={0} sx={{fontSize: 24}} gutterBottom>
+            PORTRAITURE 2014-2023
+          </Typography>
+        </div>
+
+        {/* images of older works */}
         <div className="paintingsSectionContainer">
          
          {/* map through artworks and show only those that are not of set LATEST */}

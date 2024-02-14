@@ -90,12 +90,26 @@ General / Misc
 
 .container {
   /* margin-top: 173px; */
-  padding: 193px 20px 0px 20px;
+  padding: 193px 20px 5px 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   /* width: 100%; */
+  background-color: white;
+}
+
+.horizontalLine {
+  border-bottom: black 2px solid;
+}
+
+.containerAdditional {
+  padding: 40px 20px 40px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
 }
 
 .lineBreak {
@@ -171,6 +185,7 @@ Paintings
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   padding: 30px 10px 0px 10px;
 }
 
