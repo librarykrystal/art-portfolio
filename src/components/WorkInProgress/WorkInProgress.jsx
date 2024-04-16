@@ -1,9 +1,9 @@
 import React, { useLayoutEffect } from "react";
 
-// import vicNoirInProg1 from './webVicNoirWIP1.png';
-// import vicNoirInProg2 from './webVicNoirWIP2.png';
-// import vicNoirInProg3 from './webVicNoirWIP3.png';
-// import vicNoirInProg4 from './webVicNoirWIP4.png';
+import inProg1 from './aliceInProg1.png';
+import inProg2 from './aliceInProg2.png';
+import inProg3 from './aliceInProg3.png';
+// import inProg4 from './webVicNoirWIP4.png';
 
 // Material UI Imports
 import { createTheme, ThemeProvider } from '@mui/material/styles';
@@ -57,7 +57,7 @@ function WorkInProgress() {
         {/* <img className="latestImageLandscape" src={hush}></img> */}
         <div className="intro">
           <Typography variant="body1" mb={2} sx={{ textIndent: "40px", textAlign: "justify"}}gutterBottom>
-          Krystal is deep in the rabbit-hole of conceptualizing her next piece: a self-reflective scene themed after Lewis Carroll’s <Box fontStyle="italic" display='inline'>Alice’s Adventures in Wonderland</Box> and <Box fontStyle="italic" display='inline'>Through the Looking-Glass</Box>.  This work will see the return of Krystal’s “main character” previously seen in <Box fontStyle="italic" display='inline'>Hush</Box>—a headless female figure holding a skull, a traumatized being that the viewer may see as defeated or victorious, while at once surreal and perhaps relatable—this time, in the role of an adult Alice who has become a permanent inhabitant of Wonderland.
+          Krystal is deep in the rabbit-hole of realizing her next piece: a self-reflective scene themed after Lewis Carroll’s <Box fontStyle="italic" display='inline'>Alice’s Adventures in Wonderland</Box> and <Box fontStyle="italic" display='inline'>Through the Looking-Glass</Box>.  This work sees the return of Krystal’s “main character” previously seen in <Box fontStyle="italic" display='inline'>Hush</Box>—a headless female figure holding a skull, a traumatized being that the viewer may see as defeated or victorious, while at once surreal and perhaps relatable—this time, in the role of an adult Alice who has become a permanent inhabitant of Wonderland.
           </Typography>
           <Typography variant="body1" sx={{ textIndent: "40px", textAlign: "justify"}}gutterBottom>
           Stay tuned for behind-the-scenes updates on this work-in-progess.
@@ -67,9 +67,10 @@ function WorkInProgress() {
         <div className="latestCloseupsContainer">
         {/* <div class="lineBreak"></div> */}
 
-        {/* <img className="zoomImage" src={vicNoirInProg1}></img> */}
-        {/* <img className="zoomImage" src={vicNoirInProg2}></img> */}
-        {/* <img className="zoomImage" src={vicNoirInProg4}></img> */}
+        <img className="zoomImage" src={inProg1}></img>
+        <img className="zoomImage" src={inProg2}></img>
+        <img className="zoomImage" src={inProg3}></img>
+        {/* <img className="zoomImage" src={inProg4}></img> */}
 
         </div>
         <center>
