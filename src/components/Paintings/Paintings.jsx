@@ -89,7 +89,7 @@ function Paintings() {
         {/* <Bulletin /> */}
 
         <div className="latestHeader">
-          <Typography component={'span'} className="inProgHeaderText" variant="h3" fontWeight="bold" mb={0} sx={{fontSize: 24}} gutterBottom>
+          <Typography component={'span'} className="inProgHeaderText" variant="h3" fontWeight="bold" sx={{fontSize: 24}} gutterBottom>
             LATEST WORK
           </Typography>
         </div>
@@ -105,15 +105,15 @@ function Paintings() {
         </div>
 
         {/* LATEST closeup images */}
-        <div className="latestCloseupsContainer">
+        {/* <div className="latestCloseupsContainer">
           <img className="zoomImage" src={noirZoomLeaf}></img>
           <img className="zoomImage" src={noirZoomLapel}></img>
           <img className="zoomImage" src={noirZoomFace}></img>
-        </div>
+        </div> */}
 
       </div>
 
-      <div className="horizontalLine"></div>
+      {/* <div className="horizontalLine"></div> */}
 
 
       {/* RECENT work container */}
