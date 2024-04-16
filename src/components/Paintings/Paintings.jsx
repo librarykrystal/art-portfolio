@@ -2,11 +2,8 @@ import React, { useLayoutEffect } from "react";
 
 import Bulletin from '../Bulletin/Bulletin';
 
-// imports of latest work and zoom-in images
+// imports of latest work
 import noir from './webNoir.png';
-import noirZoomFace from './webNoirZoomFace.png';
-import noirZoomLapel from './webNoirZoomLapel.png';
-import noirZoomLeaf from './webNoirZoomLeaf.png';
 
 // imports of completed recent works
 import hush from './webHush.png';
