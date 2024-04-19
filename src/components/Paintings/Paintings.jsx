@@ -110,8 +110,6 @@ function Paintings() {
 
       </div>
 
-      {/* <div className="horizontalLine"></div> */}
-
 
       {/* RECENT work container */}
       <div className="containerAdditional">
@@ -137,7 +135,7 @@ function Paintings() {
 
         <div className="portraitureHeader">
           <Typography component={'span'} color="secondary" className="inProgHeaderText" variant="h3" fontWeight="bold" mb={0} sx={{fontSize: 24}} gutterBottom>
-            PORTRAITURE 2014-2023
+            SELECTED PORTRAITURE 2014-2023
           </Typography>
         </div>
 
