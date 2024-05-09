@@ -36,10 +36,7 @@ import Box from '@mui/material/Box';
 const theme = createTheme({
   typography: {
     fontFamily: 'Albert Sans',
-    // h3: {
-    //   fontFamily: 'Andika',
-    // }
-  },
+    },
   palette: {
     primary: {
       main: '#000',
@@ -86,7 +83,7 @@ function Paintings() {
         {/* <Bulletin /> */}
 
         <div className="latestHeader">
-          <Typography component={'span'} className="inProgHeaderText" variant="h3" fontWeight="bold" sx={{fontSize: 24}} gutterBottom>
+          <Typography component={'span'} className="inProgHeaderText" variant="h4" fontWeight="bold" sx={{fontSize: 24}} gutterBottom>
             LATEST WORK
           </Typography>
         </div>
@@ -134,9 +131,15 @@ function Paintings() {
       <div className="paintingsOuterContainer">
 
         <div className="portraitureHeader">
+          <center>
           <Typography component={'span'} color="secondary" className="inProgHeaderText" variant="h3" fontWeight="bold" mb={0} sx={{fontSize: 24}} gutterBottom>
-            SELECTED PORTRAITURE 2014-2023
+            SELECTED PORTRAITURE
           </Typography>
+          <br />
+          <Typography component={'span'} color="secondary" className="inProgHeaderText" variant="h3" fontWeight="bold" mb={0} sx={{fontSize: 24}} gutterBottom>
+            2014-2023
+          </Typography>
+          </center>
         </div>
 
         {/* images of older works */}
