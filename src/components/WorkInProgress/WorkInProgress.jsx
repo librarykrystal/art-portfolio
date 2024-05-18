@@ -3,7 +3,8 @@ import React, { useLayoutEffect } from "react";
 import inProg1 from './aliceInProg1.png';
 import inProg2 from './aliceInProg2.png';
 import inProg3 from './aliceInProg3.png';
-// import inProg4 from './webVicNoirWIP4.png';
+import inProg4 from './aliceInProg4.png';
+
 
 // Material UI Imports
 import { createTheme, ThemeProvider } from '@mui/material/styles';
@@ -70,7 +71,7 @@ function WorkInProgress() {
         <img className="zoomImage" src={inProg1}></img>
         <img className="zoomImage" src={inProg2}></img>
         <img className="zoomImage" src={inProg3}></img>
-        {/* <img className="zoomImage" src={inProg4}></img> */}
+        <img className="zoomImage" src={inProg4}></img>
 
         </div>
         <center>
