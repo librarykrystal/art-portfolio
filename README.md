@@ -10,7 +10,7 @@ The deployed site can be visited [here!](https://www.galleryoffrost.com/)
 
 ## Prerequisites
 
-This app was built with Node, React, and Material UI (and a full list of dependencies can be found in `package.json`).
+This site was built with Node, React, and Material UI (and a full list of dependencies can be found in `package.json`).
 
 Before you get started, make sure you have the following software installed on your computer:
 
@@ -20,7 +20,6 @@ Before you get started, make sure you have the following software installed on y
 ## Install Instructions
 
 - Run `npm install`
-- Run `npm run server`
 - Run `npm run client`
 - Navigate to `localhost:3000` in your browser.
 
