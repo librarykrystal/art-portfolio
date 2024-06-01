@@ -3,7 +3,7 @@ import React, { useLayoutEffect } from "react";
 import Bulletin from '../Bulletin/Bulletin';
 
 // imports of latest work
-import noir from './webNoir.png';
+import noir from './webNoirVert.png';
 
 // imports of completed recent works
 import hush from './webHush.png';
