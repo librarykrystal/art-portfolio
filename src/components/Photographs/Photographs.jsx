@@ -16,6 +16,7 @@ import FairRide from './webPhotoFairRideSky.png';
 import FairSilhouette from './webPhotoFairSilhouette.png';
 import LondonChloro from './webPhotoLondonChloro.png';
 import LondonHolmes from './webPhotoLondonHolmes.png';
+import LondonLitter from './webPhotoLondonLitter.png';
 import LondonNatHist from './webPhotoLondonNatHistMus.png';
 import LondonTowerChamber from './webPhotoLondonTowerChamber.png';
 import LondonWhalePeek from './webPhotoLondonWhalePeek.png';
@@ -65,11 +66,12 @@ const photos = [
   {id: 203, title: "Haunted Funhouse", set: "Fair", printsAvailable: false, image: FairHaunt},
   {id: 204, title: "Fair Memory", set: "Fair", printsAvailable: false, image: FairCheer},
   {id: 205, title: "Darkened Barker", set: "Fair", printsAvailable: false, image: FairSilhouette},
-  {id: 301, title: "Poison Medicine", set: "London", printsAvailable: false, image: LondonChloro},
+  // {id: 301, title: "Poison Medicine", set: "London", printsAvailable: false, image: LondonChloro},
   {id: 302, title: "Holmes", set: "London", printsAvailable: false, image: LondonHolmes},
   {id: 303, title: "Natural History Architecture", set: "London", printsAvailable: false, image: LondonNatHist},
-  {id: 304, title: "Tower Chamber", set: "London", printsAvailable: false, image: LondonTowerChamber},
-  {id: 305, title: "Hope Through Stained Glass", set: "London", printsAvailable: false, image: LondonWhalePeek},
+  {id: 304, title: "Kitty Litter", set: "London", printsAvailable: false, image: LondonLitter},
+  {id: 305, title: "Tower Chamber", set: "London", printsAvailable: false, image: LondonTowerChamber},
+  // {id: 306, title: "Hope Through Stained Glass", set: "London", printsAvailable: false, image: LondonWhalePeek},
 ];
 
 function Photographs() {
