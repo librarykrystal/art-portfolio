@@ -3,11 +3,13 @@ import React, { useLayoutEffect } from "react";
 import Bulletin from '../Bulletin/Bulletin';
 
 // Photo Imports
+import ParisCataQueue from './webPhotoParisCatacombes.jpg';
 import ParisDoorShadow from './webPhotoParisDoorShadow.png';
 import ParisLePenseur from './webPhotoParisLePenseur.png';
 import ParisMannequin from './webPhotoParisMannequin.png';
 import ParisMoulinRouge from './webPhotoParisMoulinRouge.png';
 import ParisPalaisGarnier from './webPhotoParisPalaisGarnier.png';
+import ParisStreetLamp from './webPhotoParisStreetLamp.jpg';
 import ParisStreetSky from './webPhotoParisStreetSky.png';
 import FairBear from './webPhotoFairBear.png';
 import FairCheer from './webPhotoFairCheer.png';
@@ -61,6 +63,8 @@ const photos = [
   {id: 104, title: "Curves of the Palais Garnier", set: "Paris", printsAvailable: false, image: ParisPalaisGarnier},
   {id: 105, title: "Shadowy Montmartre Street", set: "Paris", printsAvailable: false, image: ParisStreetSky},
   {id: 106, title: "A Shadow Blocks the Exit", set: "Paris", printsAvailable: false, image: ParisDoorShadow},
+  {id: 107, title: "Catacombes Queue", set: "Paris", printsAvailable: false, image: ParisCataQueue},
+  {id: 108, title: "Street Lamp", set: "Paris", printsAvailable: false, image: ParisStreetLamp},
   {id: 201, title: "Midway Ride", set: "Fair", printsAvailable: false, image: FairRide},
   {id: 202, title: "I Can Carry It", set: "Fair", printsAvailable: false, image: FairBear},
   {id: 203, title: "Haunted Funhouse", set: "Fair", printsAvailable: false, image: FairHaunt},
