@@ -1,5 +1,6 @@
-import React, { useLayoutEffect } from "react";
+import React, { useLayoutEffect, useState, useEffect } from "react";
 import { useLocation } from 'react-router-dom';
+import FontFaceObserver from "fontfaceobserver";
 
 // Material UI Imports
 import { createTheme, ThemeProvider } from '@mui/material/styles';
@@ -36,11 +37,17 @@ const theme = createTheme({
   },
 });
 
-
-
 function Header() {
 
-  // Makes each view load scrolled to top
+  const [fontLoaded, setFontLoaded] = useState(false);
+
+  useEffect(() => {
+    const font = new FontFaceObserver('Kolker Brush');
+    font.load().then(() => {
+      setFontLoaded(true);
+    })
+  }, []);
+
   useLayoutEffect(() => {
     window.scrollTo(0, 0)
   }, []);
@@ -53,7 +60,13 @@ function Header() {
       <div className="headerOuter">
 
         <div className="headerName">
-          <Typography variant="h3" mt={0} mb={0}  gutterBottom>
+          <Typography
+            variant="h3"
+            mt={0}
+            mb={0} 
+            style={{ fontSize: !fontLoaded && '4rem'}}
+            gutterBottom
+          >
             Krystal Frost
           </Typography>
         </div>
